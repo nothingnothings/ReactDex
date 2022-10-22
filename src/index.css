@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Pokemon Font';
+  src: url('../public/fonts/Pokemon\ Solid.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -18,8 +25,12 @@ code {
   --white: #ffffff;
   --dark-blue: #263238;
   --light-green: #ebf5f0;
+  --pokemon-yellow: #ffcb05;
+  --pokemon-blue: #3c5aa6;
 }
 
 main {
   background-color: var(--grey);
 }
+
+/* BOOTSTRAP STYLE RESET */

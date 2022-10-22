@@ -12,10 +12,10 @@ const Pokedex = (props) => {
       </div>
      <div className="container pokedex mt-3 pt-3">
         <div className="row d-flex justify-content-center mt-5">
-          {props.pokemons.map((pokemon) => {
+          {props.pokemons.map((pokemon, index) => {
             return (
-              <div class="col-6">
-                <Card key={pokemon.name} pokemon={pokemon}></Card>
+              <div className="col-6" key={pokemon.name + Math.random()}>
+                <Card pokemon={pokemon} pokemonId={1 + index}></Card>
               </div>
             );
           })}

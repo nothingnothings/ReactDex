@@ -6,6 +6,11 @@
   background-color: var(--grey);
 }
 
+.pokemon-number {
+  top: 1.5rem;
+  right: 2rem;
+}
+
 .pokemon-img-wrapper {
   background-color: var(--white);
   padding: 1.8rem;
@@ -17,4 +22,12 @@
   max-width: 11rem;
   min-height: 10rem;
   min-width: 10rem;
+}
+
+.pokemon-link {
+  color: var(--dark) !important;
+}
+
+.pokemon-link:hover {
+  text-decoration: none;
 }

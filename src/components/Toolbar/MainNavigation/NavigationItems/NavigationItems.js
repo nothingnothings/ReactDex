@@ -15,7 +15,6 @@ const NavigationItems = (props) => {
   return (
     <React.Fragment>
       <ul className="main-header__item-list navbar-nav">
-
         {navItems.map((item) => {
           return (
             <NavigationItem
@@ -23,6 +22,7 @@ const NavigationItems = (props) => {
               link={item.link}
               type={props.type}
               text={item.text}
+              endProp={item.id === 'pokedex' ? true : false}
             ></NavigationItem>
           );
         })}

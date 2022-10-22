@@ -24,3 +24,18 @@
 .main-header__item:hover > a {
     color: var(--dark);
 }
+
+
+.main-header__item a.active {
+    pointer-events: none;
+}
+
+.main-header__item:has(a.active) {
+    background-color: var(--white);
+    pointer-events: none;
+}
+
+
+.main-header__item:has(a.active) a {
+    color: var(--dark);
+}
