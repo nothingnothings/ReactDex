@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainNavigation from '../Navigation/MainNavigation/MainNavigation';
+import MainNavigation from './MainNavigation/MainNavigation';
 
 import './Toolbar.css';
 
