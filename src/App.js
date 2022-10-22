@@ -14,7 +14,7 @@ function App() {
   let routes = (
     <Routes>
       <Route path="/search" element={<PokemonSearch />} />
-      <Route path="/search/:pokemonId" element={<PokemonDetails />} />
+      <Route path="/pokedex/:pokemonId" element={<PokemonDetails />} />
       <Route path="*" element={<Navigate replace to="/" />} />
       <Route path="/" exact element={<PokedexPage />} />
     </Routes>

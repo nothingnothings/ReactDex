@@ -6,7 +6,7 @@ import './NavigationItems.css';
 
 const navItems = [
   { id: 'pokedex', text: 'Pokédex', link: '/' },
-  { id: 'search', text: 'Search for a Pokémon', link: '/search' },
+  { id: 'search', text: 'Procurar por um Pokémon', link: '/search' },
 ];
 
 const NavigationItems = (props) => {

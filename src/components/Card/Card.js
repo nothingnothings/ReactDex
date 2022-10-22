@@ -7,7 +7,7 @@ const Card = (props) => {
   console.log(props.pokemon);
   return (
 
-    <NavLink to={`/pokedex/${props.index}`} className="pokemon-link">
+    <NavLink to={`/pokedex/${props.pokemonId}`} className="pokemon-link">
     <div className="card px-2 mb-5 d-flex flex-row align-items-center justify-content-center position-relative">
               <h3 className="pokemon-number text-right position-absolute"># {props.pokemonId}</h3>
       <div className="pokemon-img-wrapper">
