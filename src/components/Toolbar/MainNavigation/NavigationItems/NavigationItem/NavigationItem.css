@@ -1,0 +1,26 @@
+.main-header__item {
+  padding: 1rem 0;
+  margin: -2rem 0;
+  transition: 0.1s all;
+  pointer-events: none;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-weight: bold;
+  display: block;
+  font-size: 1.1rem;
+  color: var(--white);
+  pointer-events: auto;
+  
+}
+
+
+.main-header__item:hover {
+    background-color: var(--light-green);
+}
+
+.main-header__item:hover > a {
+    color: var(--dark);
+}

@@ -5,8 +5,8 @@ import NavigationItem from './NavigationItem/NavigationItem';
 import './NavigationItems.css';
 
 const navItems = [
-  { id: 'pokedex', text: 'Pokedex', link: '/' },
-  { id: 'search', text: 'Search for a Pokemon', link: '/search' },
+  { id: 'pokedex', text: 'Pokédex', link: '/' },
+  { id: 'search', text: 'Search for a Pokémon', link: '/search' },
 ];
 
 const NavigationItems = (props) => {
@@ -14,7 +14,7 @@ const NavigationItems = (props) => {
 
   return (
     <React.Fragment>
-      <ul className="main-header__item-list">
+      <ul className="main-header__item-list navbar-nav">
 
         {navItems.map((item) => {
           return (

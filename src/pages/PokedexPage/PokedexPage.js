@@ -27,7 +27,11 @@ const PokedexPage = () => {
       });
   }, []);
 
-  return <Pokedex pokemons={pokedex}></Pokedex>;
+  return (
+    <React.Fragment>
+      <Pokedex pokemons={pokedex}></Pokedex>
+    </React.Fragment>
+  );
 };
 
 export default PokedexPage;

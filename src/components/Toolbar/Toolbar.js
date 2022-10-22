@@ -5,14 +5,12 @@ import MainNavigation from './MainNavigation/MainNavigation';
 import './Toolbar.css';
 
 const Toolbar = (props) => {
-  if (props.token) {
-    return 'dummy';
-  }
 
   return (
     <React.Fragment>
       <header className="main-header">
-        <MainNavigation cart={props.cart}></MainNavigation>
+        
+        <MainNavigation></MainNavigation>
       </header>
     </React.Fragment>
   );

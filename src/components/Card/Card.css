@@ -1,0 +1,20 @@
+.card {
+  min-height: 15rem;
+  min-height: 18rem;
+  max-height: 20rem;
+  border-radius: 18px;
+  background-color: var(--grey);
+}
+
+.pokemon-img-wrapper {
+  background-color: var(--white);
+  padding: 1.8rem;
+  border-radius: 100px;
+}
+
+.pokemon-img {
+  max-height: 11rem;
+  max-width: 11rem;
+  min-height: 10rem;
+  min-width: 10rem;
+}

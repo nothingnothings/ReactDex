@@ -5,7 +5,7 @@ import './NavigationItem.css';
 
 const NavigationItem = (props) => {
   return (
-    <li className={props.type === 'main-header__item'}>
+    <li className="main-header__item nav-item px-4">
       <NavLink to={props.link} exact="true" onClick={props.clicked}>
         {props.text}
       </NavLink>

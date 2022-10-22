@@ -6,8 +6,10 @@ import './MainNavigation.css';
 
 const MainNavigation = (props) => {
   return (
-    <nav className="main-header__nav">
+    <nav className="navbar navbar-dark navbar-expand-lg">
+        <div className="container navbar-container">
       <NavigationItems logout={props.token} type="main" cart={props.cart} />
+      </div>
     </nav>
   );
 };
