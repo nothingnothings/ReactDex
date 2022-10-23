@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
 import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetailsCard';
+
 import { Pokemon } from '../../models/pokemon.model';
 
 import './PokemonDetails.css';
 
-
-const PokemonDetails: React.FC<Pokemon> = (props) => {
+const PokemonDetails: React.FC<Pokemon> = () => {
   const [pokemon, setPokemon] = useState<Pokemon>();
 
   const params = useParams();
