@@ -7,9 +7,6 @@ import { Pokemon } from '../../models/pokemon.model';
 
 import './PokemonDetails.css';
 
-// interface AppProps {
-
-// }
 
 const PokemonDetails: React.FC<Pokemon> = (props) => {
   const [pokemon, setPokemon] = useState<Pokemon>();
@@ -27,9 +24,7 @@ const PokemonDetails: React.FC<Pokemon> = (props) => {
         return res.data;
       })
       .then((pokemonData: Pokemon) => {
-        // setPokemon(pokemonData);
-
-        setPokemon((prevState) => {
+        setPokemon((_prevState) => {
           return pokemonData;
         });
       });

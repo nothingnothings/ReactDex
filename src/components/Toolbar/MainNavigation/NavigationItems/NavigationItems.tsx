@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 
 import NavigationItem from './NavigationItem/NavigationItem';
+
 import './NavigationItems.css';
 
 const navItems = [
@@ -9,9 +9,7 @@ const navItems = [
   { id: 'search', text: 'Procurar por um Pokémon', link: '/search' },
 ];
 
-const NavigationItems = (props) => {
-  useEffect(() => {}, []);
-
+const NavigationItems = () => {
   return (
     <React.Fragment>
       <ul className="main-header__item-list navbar-nav">
@@ -20,7 +18,6 @@ const NavigationItems = (props) => {
             <NavigationItem
               key={item.id}
               link={item.link}
-              type={props.type}
               text={item.text}
               endProp={item.id === 'pokedex' ? true : false}
             ></NavigationItem>

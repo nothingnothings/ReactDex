@@ -4,12 +4,10 @@ import MainNavigation from './MainNavigation/MainNavigation';
 
 import './Toolbar.css';
 
-const Toolbar = (props) => {
-
+const Toolbar = () => {
   return (
     <React.Fragment>
       <header className="main-header">
-        
         <MainNavigation></MainNavigation>
       </header>
     </React.Fragment>

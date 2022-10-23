@@ -4,11 +4,11 @@ import NavigationItems from './NavigationItems/NavigationItems';
 
 import './MainNavigation.css';
 
-const MainNavigation = (props) => {
+const MainNavigation = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg">
-        <div className="container navbar-container">
-      <NavigationItems logout={props.token} type="main" cart={props.cart} />
+      <div className="container navbar-container">
+        <NavigationItems />
       </div>
     </nav>
   );
