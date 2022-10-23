@@ -1,8 +1,8 @@
-import React from 'react';
-import { ReactFragment } from 'react';
+// import React from 'react';
 
-import './PokemonSearch.css';
 
-const PokemonSearch = () => {};
+// import './PokemonSearch.css';
 
-export default PokemonSearch;
+// const PokemonSearch = () => {};
+
+// export default PokemonSearch;
