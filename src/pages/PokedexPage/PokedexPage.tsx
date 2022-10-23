@@ -4,31 +4,37 @@ import './PokedexPage.css';
 
 // import { connect } from 'react-redux';
 
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+// import { useEffect, useState } from 'react';
+// import axios from 'axios';
 
 import Pokedex from '../../components/Pokedex/Pokedex';
 
-const PokedexPage = () => {
-  const [pokedex, setPokedex] = useState([]);
+import { SimplePokemon } from '../../models/simplepokemon.model';
 
-  useEffect(() => {
-    axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=800')
-      .then((res) => {
-        console.log(res);
-        console.log(res.data.results);
+interface PokedexPageProps {
+  pokedex: SimplePokemon[];
+}
 
-        return res.data.results;
-      })
-      .then((pokemons) => {
-        setPokedex(pokemons);
-      });
-  }, []);
+const PokedexPage: React.FC<PokedexPageProps> = (props) => {
+  //   const [pokedex, setPokedex] = useState([]);
+
+  //   useEffect(() => {
+  //     axios
+  //       .get('https://pokeapi.co/api/v2/pokemon?limit=800')
+  //       .then((res) => {
+  //         console.log(res);
+  //         console.log(res.data.results);
+
+  //         return res.data.results;
+  //       })
+  //       .then((pokemons) => {
+  //         setPokedex(pokemons);
+  //       });
+  //   }, []);
 
   return (
     <React.Fragment>
-      <Pokedex pokemons={pokedex}></Pokedex>
+      <Pokedex pokemons={props.pokedex}></Pokedex>
     </React.Fragment>
   );
 };

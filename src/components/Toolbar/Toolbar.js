@@ -1,19 +1,19 @@
-import React from 'react';
+// import React from 'react';
 
-import MainNavigation from './MainNavigation/MainNavigation';
+// import MainNavigation from './MainNavigation/MainNavigation';
 
-import './Toolbar.css';
+// import './Toolbar.css';
 
-const Toolbar = (props) => {
+// const Toolbar = (props) => {
 
-  return (
-    <React.Fragment>
-      <header className="main-header">
+//   return (
+//     <React.Fragment>
+//       <header className="main-header">
         
-        <MainNavigation></MainNavigation>
-      </header>
-    </React.Fragment>
-  );
-};
+//         <MainNavigation></MainNavigation>
+//       </header>
+//     </React.Fragment>
+//   );
+// };
 
-export default Toolbar;
+// export default Toolbar;
