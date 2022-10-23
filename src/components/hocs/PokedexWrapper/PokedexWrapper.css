@@ -1,0 +1,9 @@
+.pokedex-wrapper {
+  background-color: var(--white);
+  height: 100%;
+}
+
+
+.details-wrapper {
+  height: 100vh;
+}

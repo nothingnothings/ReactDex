@@ -38,7 +38,7 @@ import './Pokedex.css';
 
 const Pokedex = (props) => {
   return (
-    <PokedexWrapper message="Pokédex">
+    <PokedexWrapper message="Pokédex" isDetails={false}>
       <div className="container pokedex mt-3 pt-3">
         <div className="row d-flex justify-content-center mt-5">
           {props.pokemons.map((pokemon, index) => {

@@ -1,0 +1,20 @@
+.pokemon-details-card {
+}
+
+.pokemon-details-card__image-wrapper {
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.pokemon-details-card__image {
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.pokemon-details-card__body {
+}
+
+.pokemon-details-card__pokemon-title::first-letter,
+span {
+  text-transform: capitalize
+}

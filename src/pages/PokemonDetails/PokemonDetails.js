@@ -1,43 +1,55 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { ReactFragment } from 'react';
+import { useParams } from 'react-router-dom';
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
+import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetailsCard';
 
 import './PokemonDetails.css';
 
 const PokemonDetails = (props) => {
+  const [pokemon, setPokemon] = useState([]);
 
-
-
-    const [pokemon, setPokemon] = useState([]);
-
+  const params = useParams();
+  const pokemonId = params.pokemonId;
+  let content;
 
 
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=800')
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
       .then((res) => {
-        console.log(res);
-        console.log(res.data.results);
+        console.log(res.data);
 
-        return res.data.results;
+        return res.data;
       })
-      .then((pokemons) => {
-        setPokemon(pokemons);
+      .then((pokemonData) => {
+        setPokemon(pokemonData);
       });
   }, []);
 
-  return (
-    <PokedexWrapper message="Quem é esse Pokemon?">
-            <div className="single-pokemon-card">
 
-                    
-            </div>
 
+  if (pokemon.length === 0) {
+      content = (
+        <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
+          <div>Loading...</div>
+      </PokedexWrapper>
+      )
+  } else {
+    content = (
+      <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
+      <PokemonDetailsCard pokemon={pokemon}>
+      </PokemonDetailsCard>
     </PokedexWrapper>
-  );
+    )
+  }
 
 
+
+
+
+  return content;
 };
 
 export default PokemonDetails;
