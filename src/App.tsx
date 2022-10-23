@@ -48,7 +48,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter basename="/pokemonapi">
+    <BrowserRouter>
       <div>
         <Layout>{routes}</Layout>
       </div>

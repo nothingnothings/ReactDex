@@ -14,17 +14,13 @@ interface PokemonDetailsCardProps {
 const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center text-white">
         <div className="col-10">
-          <div className="pokemon-details-card mt-5 pt-5">
-            <div className="pokemon-details-card__image-wrapper d-flex">
-              {/* <div className="pokemon-details-card__pokemon-title">
-                <h1>{}</h1>
-              </div> */}
-              <h1 className="pokemon-details-card__pokemon-title">
+          <div className="pokemon-details-card mt-5 pt-3 d-flex flex-column align-items-center">
+          <h1 className="pokemon-details-card__pokemon-title position-absolute text-dark">
                 {props.pokemon.name}
               </h1>
-              <div className="pokemon-details-card__pokemon-types">
+              <div className="pokemon-details-card__pokemon-types position-absolute text-dark">
                 {props.pokemon.types.map((typeObject: Type) => {
                   return (
                     <div
@@ -36,25 +32,27 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                   );
                 })}
               </div>
+            <div className="pokemon-details-card__image-wrapper d-flex justify-content-center pt-3 mt-5">
+
               <img
                 src={`https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`}
                 className="pokemon-details-card__image"
                 alt={props.pokemon.name}
               ></img>
             </div>
-            <div className="pokemon-details-card__body">
-              <div className="pokemon-details-card__body__height">
-                <strong>Altura:</strong> {props.pokemon.height * 10} cm
+            <div className="pokemon-details-card__body px-5 py-5 mx-5 mt-4">
+              <div className="pokemon-details-card__body__height mb-4">
+                <strong>Altura:</strong> &nbsp; {props.pokemon.height * 10} cm
               </div>
-              <div className="pokemon-details-card__body__weight">
-                <strong>Peso:</strong> {props.pokemon.weight / 10} kg
+              <div className="pokemon-details-card__body__weight mb-4">
+                <strong>Peso:</strong> &nbsp; {props.pokemon.weight / 10} kg
               </div>
-              <div className="pokemon-details-card__body__skills">
+              <div className="pokemon-details-card__body__skills mb-4">
                 <strong>Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
                     <div
-                      className="pokemon-details-card__body-skill"
+                      className="pokemon-details-card__body-skill ml-2 mr-1 p-1"
                       key={abilityObject.ability.name}
                     >
                       {abilityObject.ability.name}
@@ -62,9 +60,9 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                   );
                 })}
               </div>
-              <div className="pokemon-details-card__body__height">
+              <div className="pokemon-details-card__body__height mb-4">
                 <strong>Experiência Base:</strong>{' '}
-                {props.pokemon.base_experience}
+                &nbsp; {props.pokemon.base_experience}xp
               </div>
             </div>
           </div>
