@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { Pokemon, Ability, Type } from '../../models/pokemon.model';
 
 import './PokemonDetailsCard.css';
 
-const PokemonDetailsCard = (props) => {
-  // console.log(props.pokemon.types);
+interface PokemonDetailsCardProps {
+  pokemon: Pokemon;
+}
 
-  // console.log(props.pokemon.name.replace(/^./, str => str.toUpperCase()))
-
+const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
       <div className="row justify-content-center">
@@ -20,7 +21,7 @@ const PokemonDetailsCard = (props) => {
                 {props.pokemon.name}
               </h1>
               <div className="pokemon-details-card__pokemon-types">
-                {props.pokemon.types.map((typeObject) => {
+                {props.pokemon.types.map((typeObject: Type) => {
                   return (
                     <span
                       className="pokemon-details-card__pokemon-type"
@@ -46,7 +47,7 @@ const PokemonDetailsCard = (props) => {
               </div>
               <div className="pokemon-details-card__body__skills">
                 <strong>Habilidades:</strong>{' '}
-                {props.pokemon.abilities.map((abilityObject) => {
+                {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
                     <span
                       className="pokemon-details-card__body-skill"
@@ -58,7 +59,8 @@ const PokemonDetailsCard = (props) => {
                 })}
               </div>
               <div className="pokemon-details-card__body__height">
-                <strong>Experiência Base:</strong> {props.pokemon.base_experience}
+                <strong>Experiência Base:</strong>{' '}
+                {props.pokemon.base_experience}
               </div>
             </div>
           </div>

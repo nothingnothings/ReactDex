@@ -2,7 +2,13 @@ import React from 'react';
 
 import './PokedexWrapper.css';
 
-const PokedexWrapper = (props) => {
+interface PokedexWrapperProps {
+  message: string;
+  isDetails: boolean;
+  children?: JSX.Element;
+}
+
+const PokedexWrapper: React.FC<PokedexWrapperProps> = (props) => {
   return (
     <div
       className={`pokedex-wrapper container ${

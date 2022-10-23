@@ -2,9 +2,15 @@ import React from 'react';
 import Card from '../Card/Card';
 import PokedexWrapper from '../hocs/PokedexWrapper/PokedexWrapper';
 
+import { SimplePokemon } from '../../models/simplepokemon.model';
+
 import './Pokedex.css';
 
-const Pokedex = (props) => {
+interface PokedexProps {
+  pokemons: SimplePokemon[];
+}
+
+const Pokedex: React.FC<PokedexProps> = (props) => {
   return (
     <PokedexWrapper message="Pokédex" isDetails={false}>
       <div className="container pokedex mt-3 pt-3">

@@ -4,16 +4,15 @@ import Toolbar from '../../components/Toolbar/Toolbar';
 
 import './Layout.css';
 
-const Layout = (props) => {
-  useEffect(() => {
-    if (props.idToken && props.userId) {
-      props.onFetchCart(props.idToken, props.userId);
-    }
-  }, [props]);
+interface LayoutProps {
+  children?: JSX.Element;
+}
 
+const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <React.Fragment>
       <Toolbar />
+
       <main>{props.children}</main>
     </React.Fragment>
   );
