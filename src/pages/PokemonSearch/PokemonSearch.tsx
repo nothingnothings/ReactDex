@@ -1,8 +1,13 @@
+//REACT
 import React, { useState } from 'react';
+
+///COMPONENTS
 import Pokedex from '../../components/Pokedex/Pokedex';
-// import PokeSearch from '../../components/PokeSearch/PokeSearch';
+
+//MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
+//CSS
 import './PokemonSearch.css';
 
 interface PokemonSearchProps {

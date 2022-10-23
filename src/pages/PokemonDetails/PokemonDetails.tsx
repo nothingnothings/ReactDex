@@ -1,12 +1,16 @@
-import axios from 'axios';
+////REACT
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
+///AXIOS
+import axios from 'axios';
+
+///COMPONENTS
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
 import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetailsCard';
 
+///MODELS
 import { Pokemon } from '../../models/pokemon.model';
-
-import './PokemonDetails.css';
 
 const PokemonDetails: React.FC<Pokemon> = () => {
   const [pokemon, setPokemon] = useState<Pokemon>();
@@ -19,8 +23,6 @@ const PokemonDetails: React.FC<Pokemon> = () => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
       .then((res) => {
-        console.log(res.data);
-
         return res.data;
       })
       .then((pokemonData: Pokemon) => {

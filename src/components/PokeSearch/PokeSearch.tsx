@@ -1,5 +1,7 @@
+//REACT
 import React from 'react';
 
+//CSS
 import './PokeSearch.css';
 
 interface PokeSearchProps {
@@ -7,7 +9,6 @@ interface PokeSearchProps {
 }
 
 const PokeSearch: React.FC<PokeSearchProps> = (props) => {
-
   return (
     <div className="container pokeSearch-container mt-5 pb-3">
       <div className="row justify-content-center">

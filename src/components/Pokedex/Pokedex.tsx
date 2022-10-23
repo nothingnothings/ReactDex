@@ -1,11 +1,16 @@
+//REACT
 import React from 'react';
-import Card from '../Card/Card';
-import PokedexWrapper from '../hocs/PokedexWrapper/PokedexWrapper';
 
+//COMPONENTS
+import PokedexWrapper from '../hocs/PokedexWrapper/PokedexWrapper';
+import PokeSearch from '../PokeSearch/PokeSearch';
+import Card from '../Card/Card';
+
+//MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
+//CSS
 import './Pokedex.css';
-import PokeSearch from '../PokeSearch/PokeSearch';
 
 interface PokedexProps {
   pokemons: SimplePokemon[];

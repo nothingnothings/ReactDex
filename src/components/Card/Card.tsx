@@ -1,11 +1,14 @@
+//REACT
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
+//MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
+//CSS
 import './Card.css';
 
 interface CardProps {
-  // pokemonId: number;
   pokemon: SimplePokemon;
 }
 
@@ -20,7 +23,11 @@ const Card: React.FC<CardProps> = (props) => {
           <img
             alt="pokemon"
             className="pokemon-img"
-            src={(props.pokemon.id !== 778) && (props.pokemon.id !== 774)  ? `https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg` : 'dummy'}
+            src={
+              props.pokemon.id !== 778 && props.pokemon.id !== 774
+                ? `https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`
+                : 'dummy'
+            }
           />
         </div>
         <div className="pokemon-desc-wrapper">

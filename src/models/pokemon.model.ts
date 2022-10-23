@@ -1,8 +1,3 @@
-// export interface PokemonModel {
-//   text: string;
-//   id: string;
-// }
-
 export interface Pokemon {
   abilities: Ability[];
   base_experience: number;

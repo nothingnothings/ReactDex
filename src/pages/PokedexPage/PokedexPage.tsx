@@ -1,14 +1,10 @@
+//REACT
 import React from 'react';
 
-import './PokedexPage.css';
-
-// import { connect } from 'react-redux';
-
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
-
+//COMPONENTS
 import Pokedex from '../../components/Pokedex/Pokedex';
 
+//MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
 interface PokedexPageProps {

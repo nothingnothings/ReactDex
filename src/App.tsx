@@ -1,17 +1,18 @@
-import './App.css';
-
+///REACT
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
+
+///AXIOS
+import axios from 'axios';
+
+///COMPONENTS
+import Layout from './components/Layout/Layout';
 import PokedexPage from './pages/PokedexPage/PokedexPage';
 import PokemonSearch from './pages/PokemonSearch/PokemonSearch';
 import PokemonDetails from './pages/PokemonDetails/PokemonDetails';
-import Layout from './components/Layout/Layout';
-import { SimplePokemon } from './models/simplepokemon.model';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-// import { connect } from 'react-redux';
 
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
+///MODELS
+import { SimplePokemon } from './models/simplepokemon.model';
 
 function App() {
   const [pokedex, setPokedex] = useState<SimplePokemon[]>([]);
@@ -20,9 +21,6 @@ function App() {
     axios
       .get('https://pokeapi.co/api/v2/pokemon?limit=800')
       .then((res) => {
-        console.log(res);
-        console.log(res.data.results);
-
         return res.data.results;
       })
       .then((pokemons: SimplePokemon[]) => {
@@ -34,15 +32,12 @@ function App() {
           };
         });
 
-        console.log(alteredPokemons);
-
         setPokedex(alteredPokemons);
       });
   }, []);
 
   let routes = (
     <Routes>
-
       <Route path="/search" element={<PokemonSearch pokedex={pokedex} />} />
       {/* 
 // @ts-ignore */}

@@ -1,6 +1,10 @@
+//REACT
 import React from 'react';
+
+//MODELS
 import { Pokemon, Ability, Type } from '../../models/pokemon.model';
 
+//CSS
 import './PokemonDetailsCard.css';
 
 interface PokemonDetailsCardProps {

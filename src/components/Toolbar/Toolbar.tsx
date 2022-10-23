@@ -1,7 +1,10 @@
+///REACT
 import React from 'react';
 
+//COMPONENTS
 import MainNavigation from './MainNavigation/MainNavigation';
 
+//CSS
 import './Toolbar.css';
 
 const Toolbar = () => {

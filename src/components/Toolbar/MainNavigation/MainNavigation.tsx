@@ -1,7 +1,7 @@
-import React from 'react';
-
+//COMPONENTS
 import NavigationItems from './NavigationItems/NavigationItems';
 
+//CSS
 import './MainNavigation.css';
 
 const MainNavigation = () => {

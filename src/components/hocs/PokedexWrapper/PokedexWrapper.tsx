@@ -1,5 +1,7 @@
+//REACT
 import React from 'react';
 
+//CSS
 import './PokedexWrapper.css';
 
 interface PokedexWrapperProps {

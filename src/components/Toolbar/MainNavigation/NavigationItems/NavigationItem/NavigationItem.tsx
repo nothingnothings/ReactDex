@@ -1,6 +1,8 @@
+//REACT
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+//CSS
 import './NavigationItem.css';
 
 interface NavigationItemProps {

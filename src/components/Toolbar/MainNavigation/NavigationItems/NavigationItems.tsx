@@ -1,7 +1,10 @@
+//REACT
 import React from 'react';
 
+//COMPONENTS
 import NavigationItem from './NavigationItem/NavigationItem';
 
+///CSS
 import './NavigationItems.css';
 
 const navItems = [

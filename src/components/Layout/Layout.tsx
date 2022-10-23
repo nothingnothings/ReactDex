@@ -1,8 +1,9 @@
+//REACT
 import React from 'react';
 
-import Toolbar from '../../components/Toolbar/Toolbar';
+//COMPONENTS
 
-import './Layout.css';
+import Toolbar from '../../components/Toolbar/Toolbar';
 
 interface LayoutProps {
   children?: JSX.Element;

@@ -1,6 +1,4 @@
 .main-header__nav {
-  /* height: 100%;
-    width: 96vw; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,11 +7,3 @@
 .custom-navbar {
   padding: 15px;
 }
-
-/*   
-  @media (max-width: 769px) {
-    .main-header__nav {
-      display: none !important;
-    }
-  }
-   */
