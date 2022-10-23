@@ -32,11 +32,7 @@ const PokedexPage: React.FC<PokedexPageProps> = (props) => {
   //       });
   //   }, []);
 
-  return (
-    <React.Fragment>
-      <Pokedex pokemons={props.pokedex}></Pokedex>
-    </React.Fragment>
-  );
+  return <Pokedex pokemons={props.pokedex} wrapperMessage={"Pokédex"}></Pokedex>;
 };
 
 export default PokedexPage;

@@ -8,11 +8,12 @@ import './Pokedex.css';
 
 interface PokedexProps {
   pokemons: SimplePokemon[];
+  wrapperMessage: string;
 }
 
 const Pokedex: React.FC<PokedexProps> = (props) => {
   return (
-    <PokedexWrapper message="Pokédex" isDetails={false}>
+    <PokedexWrapper message={props.wrapperMessage} isDetails={false}>
       <div className="container pokedex mt-3 pt-3">
         <div className="row d-flex justify-content-center mt-5">
           {props.pokemons.map((pokemon, index) => {
