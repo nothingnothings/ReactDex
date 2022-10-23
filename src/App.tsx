@@ -25,22 +25,29 @@ function App() {
 
         return res.data.results;
       })
-      .then((pokemons) => {
-        setPokedex(pokemons);
+      .then((pokemons: SimplePokemon[]) => {
+        const alteredPokemons = pokemons.map((pokemon, index) => {
+          return {
+            id: index + 1,
+            url: pokemon.url,
+            name: pokemon.name,
+          };
+        });
+
+        console.log(alteredPokemons);
+
+        setPokedex(alteredPokemons);
       });
   }, []);
 
   let routes = (
     <Routes>
-      {/* 
-// @ts-ignore */}
+
       <Route path="/search" element={<PokemonSearch pokedex={pokedex} />} />
       {/* 
 // @ts-ignore */}
       <Route path="/pokedex/:pokemonId" element={<PokemonDetails />} />
       <Route path="*" element={<Navigate replace to="/" />} />
-      {/* 
-// @ts-ignore */}
       <Route path="/" element={<PokedexPage pokedex={pokedex} />} />
     </Routes>
   );

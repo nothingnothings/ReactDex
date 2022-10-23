@@ -16,23 +16,14 @@ interface PokedexPageProps {
 }
 
 const PokedexPage: React.FC<PokedexPageProps> = (props) => {
-  //   const [pokedex, setPokedex] = useState([]);
-
-  //   useEffect(() => {
-  //     axios
-  //       .get('https://pokeapi.co/api/v2/pokemon?limit=800')
-  //       .then((res) => {
-  //         console.log(res);
-  //         console.log(res.data.results);
-
-  //         return res.data.results;
-  //       })
-  //       .then((pokemons) => {
-  //         setPokedex(pokemons);
-  //       });
-  //   }, []);
-
-  return <Pokedex pokemons={props.pokedex} wrapperMessage={"Pokédex"}></Pokedex>;
+  return (
+    <Pokedex
+      pokemons={props.pokedex}
+      wrapperMessage={'Pokédex'}
+      isSearch={false}
+      isDetails={false}
+    ></Pokedex>
+  );
 };
 
 export default PokedexPage;
