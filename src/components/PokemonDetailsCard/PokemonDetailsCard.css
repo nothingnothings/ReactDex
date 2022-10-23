@@ -7,14 +7,16 @@
 }
 
 .pokemon-details-card__image {
-  max-height: 30rem;
-  max-width: 30rem;
+  max-height: 22rem;
+  max-width: 22rem;
 }
 
 /* .pokemon-details-card__body {
 } */
 
 .pokemon-details-card__pokemon-title::first-letter,
-span {
+.pokemon-details-card__pokemon-type, 
+.pokemon-details-card__body-skill
+ {
   text-transform: capitalize
 }

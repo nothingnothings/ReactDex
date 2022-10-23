@@ -27,12 +27,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
               <div className="pokemon-details-card__pokemon-types">
                 {props.pokemon.types.map((typeObject: Type) => {
                   return (
-                    <span
+                    <div
                       className="pokemon-details-card__pokemon-type"
                       key={typeObject.type.name}
                     >
                       {typeObject.type.name}
-                    </span>
+                    </div>
                   );
                 })}
               </div>
@@ -53,12 +53,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 <strong>Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
-                    <span
+                    <div
                       className="pokemon-details-card__body-skill"
                       key={abilityObject.ability.name}
                     >
                       {abilityObject.ability.name}
-                    </span>
+                    </div>
                   );
                 })}
               </div>
