@@ -1,9 +1,0 @@
-.main-header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.custom-navbar {
-  padding: 15px;
-}

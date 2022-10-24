@@ -1,9 +1,0 @@
-.main-header {
-  padding: 1.5rem;
-  position: fixed;
-  z-index: 150;
-  top: 0;
-  width: 100%;
-  background-color: var(--dark);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
-}
