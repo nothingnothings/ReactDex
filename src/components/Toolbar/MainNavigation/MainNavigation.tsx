@@ -6,7 +6,7 @@ import './MainNavigation.css';
 
 const MainNavigation = () => {
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg">
+    <nav className="navbar navbar-dark navbar-expand">
       <div className="container navbar-container">
         <NavigationItems />
       </div>

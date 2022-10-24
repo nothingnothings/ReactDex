@@ -19,7 +19,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
       <div className="row justify-content-center text-white mt-4">
-        <div className="col-9">
+        <div className="col-md-11 col-lg-9">
           <div
             className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}
           >
