@@ -8,3 +8,11 @@
   background-color: var(--dark);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 430px) {
+  .main-header {
+    padding-left: 0;
+  }
+}
