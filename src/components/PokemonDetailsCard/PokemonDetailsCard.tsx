@@ -14,7 +14,7 @@ interface PokemonDetailsCardProps {
 const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
-      <div className="row justify-content-center text-white">
+      <div className="row justify-content-center text-white mt-4">
         <div className="col-9">
           <div className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}>
             <div className="outer-wrapper d-flex mt-4">
@@ -36,7 +36,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 </div>
               </div>
               <div className="pokemon-details-card__pokemon-number d-flex flex-column justify-content-center ml-5 pl-5">
-                <h3>#{props.pokemon.id}</h3>
+                <h3 className="pokemon-number-content">#{props.pokemon.id}</h3>
               </div>
             </div>
 

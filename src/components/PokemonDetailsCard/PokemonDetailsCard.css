@@ -55,6 +55,13 @@
   min-width: 70%;
 }
 
+.pokemon-number-content {
+  padding: 1rem;
+  background-color: var(--dark);
+  border-radius: 100px;
+  font-weight: bold;
+}
+
 .pokemon-details-card__pokemon-title,
 .pokemon-details-card__pokemon-number,
 .pokemon-details-card__pokemon-type,
@@ -148,8 +155,8 @@
 .normal-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--normal-bg), 0.5) 0%,
-    rgba(var(--normal-bg), 0.5) 60%,
+    rgba(var(--normal-bg), 0.55) 0%,
+    rgba(var(--normal-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -158,8 +165,8 @@
 .fire-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--fire-bg), 0.5) 0%,
-    rgba(var(--fire-bg), 0.5) 60%,
+    rgba(var(--fire-bg), 0.55) 0%,
+    rgba(var(--fire-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -168,8 +175,8 @@
 .water-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--water-bg), 0.5) 0%,
-    rgba(var(--water-bg), 0.5) 60%,
+    rgba(var(--water-bg), 0.55) 0%,
+    rgba(var(--water-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -177,8 +184,8 @@
 .electric-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--electric-bg), 0.5) 0%,
-    rgba(var(--electric-bg), 0.5) 60%,
+    rgba(var(--electric-bg), 0.55) 0%,
+    rgba(var(--electric-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -186,19 +193,18 @@
 .grass-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--grass-bg), 0.5) 0%,
-    rgba(var(--grass-bg), 0.5) 60%,
+    rgba(var(--grass-bg), 0.55) 0%,
+    rgba(var(--grass-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
 
-  /* background: rgba(var(--grass), 1) */
 }
 .ice-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--ice-bg), 0.5) 0%,
-    rgba(var(--ice-bg), 0.5) 60%,
+    rgba(var(--ice-bg), 0.55) 0%,
+    rgba(var(--ice-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -206,8 +212,8 @@
 .fighting-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--fighting-bg), 0.5) 0%,
-    rgba(var(--fighting-bg), 0.5) 60%,
+    rgba(var(--fighting-bg), 0.55) 0%,
+    rgba(var(--fighting-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -215,8 +221,8 @@
 .poison-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--poison-bg), 0.5) 0%,
-    rgba(var(--poison-bg), 0.5) 60%,
+    rgba(var(--poison-bg), 0.55) 0%,
+    rgba(var(--poison-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -224,8 +230,8 @@
 .ground-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--ground-bg), 0.5) 0%,
-    rgba(var(--ground-bg), 0.5) 60%,
+    rgba(var(--ground-bg), 0.55) 0%,
+    rgba(var(--ground-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -233,8 +239,8 @@
 .flying-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--flying-bg), 0.5) 0%,
-    rgba(var(--flying-bg), 0.5) 60%,
+    rgba(var(--flying-bg), 0.55) 0%,
+    rgba(var(--flying-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -242,8 +248,8 @@
 .psychic-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--psychic-bg), 0.5) 0%,
-    rgba(var(--psychic-bg), 0.5) 60%,
+    rgba(var(--psychic-bg), 0.55) 0%,
+    rgba(var(--psychic-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -251,8 +257,8 @@
 .bug-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--bug-bg), 0.5) 0%,
-    rgba(var(--bug-bg), 0.5) 60%,
+    rgba(var(--bug-bg), 0.55) 0%,
+    rgba(var(--bug-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -260,8 +266,8 @@
 .rock-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--rock-bg), 0.5) 0%,
-    rgba(var(--rock-bg), 0.5) 60%,
+    rgba(var(--rock-bg), 0.55) 0%,
+    rgba(var(--rock-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -269,8 +275,8 @@
 .ghost-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--ghost-bg), 0.5) 0%,
-    rgba(var(--ghost-bg), 0.5) 60%,
+    rgba(var(--ghost-bg), 0.55) 0%,
+    rgba(var(--ghost-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -278,8 +284,8 @@
 .dragon-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--dragon-bg), 0.5) 0%,
-    rgba(var(--dragon-bg), 0.5) 60%,
+    rgba(var(--dragon-bg), 0.55) 0%,
+    rgba(var(--dragon-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   )
@@ -287,8 +293,8 @@
 .dark-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--dark2-bg), 0.5) 0%,
-    rgba(var(--dark2-bg), 0.5) 60%,
+    rgba(var(--dark2-bg), 0.55) 0%,
+    rgba(var(--dark2-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -297,8 +303,8 @@
 .steel-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--steel-bg), 0.5) 0%,
-    rgba(var(--steel-bg), 0.5) 60%,
+    rgba(var(--steel-bg), 0.55) 0%,
+    rgba(var(--steel-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
@@ -307,8 +313,8 @@
 .fairy-bg {
   background: linear-gradient(
     to bottom,
-    rgba(var(--fairy-bg), 0.5) 0%,
-    rgba(var(--fairy-bg), 0.5) 60%,
+    rgba(var(--fairy-bg), 0.55) 0%,
+    rgba(var(--fairy-bg), 0.55) 60%,
     var(--white) 75%,
     var(--white) 100%
   );
