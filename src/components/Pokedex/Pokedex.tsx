@@ -28,7 +28,7 @@ const Pokedex: React.FC<PokedexProps> = (props) => {
         <div className="row d-flex justify-content-center mt-5">
           {props.pokemons.map((pokemon, _index) => {
             return (
-              <div className="col-11 col-md-8 col-lg-6 " key={pokemon.name + Math.random()}>
+              <div className="col-12 col-sm-11 col-md-8 col-lg-6 " key={pokemon.name + Math.random()}>
                 <Card pokemon={pokemon}></Card>
               </div>
             );

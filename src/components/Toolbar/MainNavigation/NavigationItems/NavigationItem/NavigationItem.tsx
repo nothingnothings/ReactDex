@@ -13,7 +13,7 @@ interface NavigationItemProps {
 
 const NavigationItem: React.FC<NavigationItemProps> = (props) => {
   return (
-    <li className="main-header__item nav-item px-4">
+    <li className="main-header__item nav-item px-4 text-nowrap">
       <NavLink to={props.link} end={props.endProp}>
         {props.text}
       </NavLink>

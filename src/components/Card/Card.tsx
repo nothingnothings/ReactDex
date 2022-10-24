@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = (props) => {
           />
         </div>
         <div className="pokemon-desc-wrapper">
-          <div className="ml-4 pl-4">
+          <div className="ml-sm-4 pl-4">
             <h2 className="text-nowrap pokemon-name">
               {props.pokemon.name[0].toUpperCase() +
                 props.pokemon.name.slice(1)}

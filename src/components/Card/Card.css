@@ -44,3 +44,18 @@
     min-width: 8rem;
   }
 }
+
+
+
+@media (max-width: 576px) {
+  .pokemon-name {
+    font-size: 24px;
+  }
+
+  .pokemon-img {
+    max-height: 8rem;
+    max-width: 8rem;
+    min-height: 6rem;
+    min-width: 6rem;
+  }
+}

@@ -21,7 +21,7 @@
   background-color: var(--dark-blue);
   opacity: 0.8;
   border-radius: 50px;
-  margin-top: 1.7rem !important;
+  /* margin-top: 1.7rem !important; */
   min-width: 70%;
 }
 
@@ -287,4 +287,24 @@
     var(--white) 75%,
     var(--white) 100%
   );
+}
+
+@media (max-width: 768px) {
+  .pokemon-details-card__image {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .pokemon-details-card__pokemon-number {
+    margin-left: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .pokemon-details-card__body {
+    padding: 1rem !important;
+  }
 }

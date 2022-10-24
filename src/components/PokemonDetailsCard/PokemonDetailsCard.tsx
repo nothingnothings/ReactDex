@@ -19,12 +19,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
       <div className="row justify-content-center text-white mt-4">
-        <div className="col-md-11 col-lg-9">
+        <div className="col-md-11 col-lg-9 mt-2">
           <div
             className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}
           >
             <div className="outer-wrapper d-flex mt-4">
-              <div className="pokemon-text-outer-wrapper align-self-start d-flex flex-column mr-5 pr-5">
+              <div className="pokemon-text-outer-wrapper align-self-start d-flex flex-column mr-md-5 pr-md-5">
                 <h1 className="pokemon-details-card__pokemon-title">
                   {props.pokemon.name}
                 </h1>
@@ -56,14 +56,8 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
               ></img>
             </div>
 
-            <div className="pokemon-details-card__body px-5 py-2 mx-5 mt-4">
-              <div className="pokemon-details-card__body__height my-4">
-                <strong>Altura:</strong> &nbsp; {props.pokemon.height * 10} cm
-              </div>
-              <div className="pokemon-details-card__body__weight my-4">
-                <strong>Peso:</strong> &nbsp; {props.pokemon.weight / 10} kg
-              </div>
-              <div className="pokemon-details-card__body__skills my-4">
+            <div className="pokemon-details-card__body px-5 py-3 py-md-4 mx-5 mt-4">
+            <div className="pokemon-details-card__body__skills d-flex align-items-center my-3">
                 <strong>Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
@@ -76,11 +70,17 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                   );
                 })}
               </div>
-              <div className="pokemon-details-card__body__height my-4">
-                <strong>Experiência Base:</strong> &nbsp;{' '}
+              <div className="pokemon-details-card__body__height d-flex align-items-center my-3">
+                <strong className="py-1">Altura:</strong> <p className="mb-0">&nbsp; {props.pokemon.height * 10} cm</p>
+              </div>
+              <div className="pokemon-details-card__body__weight d-flex align-items-center my-3">
+                <strong className="py-1">Peso:</strong> &nbsp; {props.pokemon.weight / 10} kg
+              </div>
+              <div className="pokemon-details-card__body__experience d-flex align-items-center my-3">
+                <strong className="py-1">Experiência Base:</strong> &nbsp;{' '}
                 {props.pokemon.base_experience}xp
               </div>
-              <div className="pokemon-details-card__body__forms mt-4 pb-2">
+              <div className="pokemon-details-card__body__forms d-flex align-items-center">
                 <strong>Formas:</strong>{' '}
                 {props.pokemon.forms.map((formObject: Form) => {
                   return (
