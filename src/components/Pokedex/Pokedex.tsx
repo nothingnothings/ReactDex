@@ -23,7 +23,7 @@ interface PokedexProps {
 const Pokedex: React.FC<PokedexProps> = (props) => {
   return (
     <PokedexWrapper message={props.wrapperMessage} isDetails={props.isDetails}>
-      <div className="container pokedex mt-3 pt-3">
+      <div className="container pokedex mt-3 pt-2">
         {props.isSearch && <PokeSearch inputChanged={props.inputChanged!} />}
         <div className="row d-flex justify-content-center mt-5">
           {props.pokemons.map((pokemon, _index) => {

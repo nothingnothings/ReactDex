@@ -16,10 +16,10 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
     <div className="container">
       <div className="row justify-content-center text-white">
         <div className="col-9">
-          <div className="pokemon-details-card mt-5 pt-3 d-flex flex-column align-items-center">
-            <div className="outer-wrapper d-flex">
+          <div className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}>
+            <div className="outer-wrapper d-flex mt-4">
               <div className="pokemon-text-outer-wrapper align-self-start d-flex flex-column mr-5 pr-5">
-                <h1 className="pokemon-details-card__pokemon-title text-dark">
+                <h1 className="pokemon-details-card__pokemon-title">
                   {props.pokemon.name}
                 </h1>
                 <div className="pokemon-details-card__pokemon-types text-dark">
@@ -35,12 +35,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                   })}
                 </div>
               </div>
-              <div className="pokemon-details-card__pokemon-number d-flex flex-column justify-content-center text-dark ml-5 pl-4">
+              <div className="pokemon-details-card__pokemon-number d-flex flex-column justify-content-center ml-5 pl-5">
                 <h3>#{props.pokemon.id}</h3>
               </div>
             </div>
 
-            <div className="pokemon-details-card__image-wrapper d-flex justify-content-center pt-2 mt-1">
+            <div className="pokemon-details-card__image-wrapper d-flex justify-content-center mt-5">
               <img
                 src={`https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`}
                 className="pokemon-details-card__image"
@@ -48,7 +48,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
               ></img>
             </div>
 
-            <div className="pokemon-details-card__body px-5 py-4 mx-5 mt-4">
+            <div className="pokemon-details-card__body px-5 py-2 mx-5 mt-4">
               <div className="pokemon-details-card__body__height my-4">
                 <strong>Altura:</strong> &nbsp; {props.pokemon.height * 10} cm
               </div>

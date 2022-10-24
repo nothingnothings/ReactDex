@@ -1,8 +1,22 @@
 .pokedex-wrapper {
   background-color: var(--white);
   height: 100%;
+  /* position: relative; */
 }
+/* 
+.pokedex-wrapper:before {
+  content: '';
+  display: block;
+  opacity: 0.6;
+  background-color: var(--grass);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
 
 .details-wrapper {
   height: 100vh;
 }
+
