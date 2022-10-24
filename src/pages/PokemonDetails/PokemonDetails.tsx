@@ -42,6 +42,7 @@ const PokemonDetails: React.FC<Pokemon> = () => {
         setDetailsIsError(true);
         setDetailsErrorMessage(err.message);
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!pokemon && detailsLoading) {
