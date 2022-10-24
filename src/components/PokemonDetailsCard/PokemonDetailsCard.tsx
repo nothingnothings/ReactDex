@@ -11,12 +11,18 @@ interface PokemonDetailsCardProps {
   pokemon: Pokemon;
 }
 
+// adds zeroes to Pokemon IDS
+const zeroPad = (num: number, places: number) =>
+  String(num).padStart(places, '0');
+
 const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
       <div className="row justify-content-center text-white mt-4">
         <div className="col-9">
-          <div className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}>
+          <div
+            className={`pokemon-details-card ${props.pokemon.types[0].type.name}-bg mt-4 pt-4 d-flex flex-column align-items-center`}
+          >
             <div className="outer-wrapper d-flex mt-4">
               <div className="pokemon-text-outer-wrapper align-self-start d-flex flex-column mr-5 pr-5">
                 <h1 className="pokemon-details-card__pokemon-title">
@@ -36,7 +42,9 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 </div>
               </div>
               <div className="pokemon-details-card__pokemon-number d-flex flex-column justify-content-center ml-5 pl-5">
-                <h3 className="pokemon-number-content">#{props.pokemon.id}</h3>
+                <h3 className="pokemon-number-content">
+                  #{zeroPad(props.pokemon.id, 3)}
+                </h3>
               </div>
             </div>
 
