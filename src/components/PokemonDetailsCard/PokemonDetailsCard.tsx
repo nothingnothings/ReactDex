@@ -80,12 +80,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 <strong className="py-1">Experiência Base:</strong> &nbsp;{' '}
                 {props.pokemon.base_experience}xp
               </div>
-              <div className="pokemon-details-card__body__forms d-flex align-items-center">
+              <div className="pokemon-details-card__body__forms d-flex flex-wrap align-items-center">
                 <strong>Formas:</strong>{' '}
                 {props.pokemon.forms.map((formObject: Form) => {
                   return (
                     <div
-                      className="pokemon-details-card__body-form ml-2 mr-1 px-2 py-1 my-1"
+                      className="pokemon-details-card__body-form text-nowrap ml-2 mr-1 px-2 py-1 my-1"
                       key={formObject.name}
                     >
                       {formObject.name}

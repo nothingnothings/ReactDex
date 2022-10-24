@@ -16,6 +16,7 @@ import { SimplePokemon } from './models/simplepokemon.model';
 
 function App() {
   const [pokedex, setPokedex] = useState<SimplePokemon[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     axios
@@ -33,17 +34,18 @@ function App() {
         });
 
         setPokedex(alteredPokemons);
+        setIsLoading(false);
       });
   }, []);
 
   let routes = (
     <Routes>
-      <Route path="/search" element={<PokemonSearch pokedex={pokedex} />} />
+      <Route path="/search" element={<PokemonSearch pokedex={pokedex} isLoading={isLoading}/>} />
       {/* 
 // @ts-ignore */}
       <Route path="/pokedex/:pokemonId" element={<PokemonDetails />} />
       <Route path="*" element={<Navigate replace to="/" />} />
-      <Route path="/" element={<PokedexPage pokedex={pokedex} />} />
+      <Route path="/" element={<PokedexPage pokedex={pokedex} isLoading={isLoading} />} />
     </Routes>
   );
 

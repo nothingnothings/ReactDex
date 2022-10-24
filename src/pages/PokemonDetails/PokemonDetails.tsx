@@ -11,12 +11,15 @@ import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetai
 
 ///MODELS
 import { Pokemon } from '../../models/pokemon.model';
+import Spinner from '../../components/Spinner/Spinner';
 
 const PokemonDetails: React.FC<Pokemon> = () => {
   const [pokemon, setPokemon] = useState<Pokemon>();
+  const [detailsLoading, setDetailsLoading] = useState<boolean>(true);
 
   const params = useParams();
   const pokemonId = params.pokemonId;
+
   let content;
 
   useEffect(() => {
@@ -26,22 +29,23 @@ const PokemonDetails: React.FC<Pokemon> = () => {
         return res.data;
       })
       .then((pokemonData: Pokemon) => {
+        setDetailsLoading(false);
         setPokemon((_prevState) => {
           return pokemonData;
         });
       });
   }, []);
 
-  if (!pokemon) {
+  if (!pokemon && detailsLoading) {
     content = (
-      <PokedexWrapper message="Quem é esse Pokemon?" isDetails={false}>
-        <div>Loading...</div>
+      <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
+        <Spinner></Spinner>
       </PokedexWrapper>
     );
   } else {
     content = (
       <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
-        <PokemonDetailsCard pokemon={pokemon}></PokemonDetailsCard>
+        <PokemonDetailsCard pokemon={pokemon!}></PokemonDetailsCard>
       </PokedexWrapper>
     );
   }

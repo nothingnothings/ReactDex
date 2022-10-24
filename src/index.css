@@ -29,6 +29,11 @@ code {
   --dark-blue: #263238;
   --light-green: #ebf5f0;
 
+  /* Spinner */
+  --pokeball-red: #ee1515;
+  --pokeball-black: #222224;
+  --pokeball-white: #f0f0f0;
+
   /* Fonts */
   --pokemon-yellow: #ffcb05;
   --pokemon-blue: #3c5aa6;

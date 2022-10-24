@@ -12,6 +12,7 @@ import './PokemonSearch.css';
 
 interface PokemonSearchProps {
   pokedex: SimplePokemon[];
+  isLoading: boolean;
 }
 
 const PokemonSearch: React.FC<PokemonSearchProps> = (props) => {
@@ -31,6 +32,7 @@ const PokemonSearch: React.FC<PokemonSearchProps> = (props) => {
     <React.Fragment>
       <Pokedex
         wrapperMessage={'Procurar por um Pokémon'}
+        isLoading={props.isLoading}
         isDetails={true}
         isSearch={true}
         inputChanged={inputChangedHandler}
