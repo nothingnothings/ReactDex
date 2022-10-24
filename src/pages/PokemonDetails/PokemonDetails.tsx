@@ -33,7 +33,12 @@ const PokemonDetails: React.FC<Pokemon> = () => {
         setPokemon((_prevState) => {
           return pokemonData;
         });
-      });
+      })
+      .catch(
+        (err) => {
+          console.log(err);
+        }
+      )
   }, []);
 
   if (!pokemon && detailsLoading) {

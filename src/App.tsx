@@ -35,17 +35,26 @@ function App() {
 
         setPokedex(alteredPokemons);
         setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
       });
   }, []);
 
   let routes = (
     <Routes>
-      <Route path="/search" element={<PokemonSearch pokedex={pokedex} isLoading={isLoading}/>} />
+      <Route
+        path="/search"
+        element={<PokemonSearch pokedex={pokedex} isLoading={isLoading} />}
+      />
       {/* 
 // @ts-ignore */}
       <Route path="/pokedex/:pokemonId" element={<PokemonDetails />} />
       <Route path="*" element={<Navigate replace to="/" />} />
-      <Route path="/" element={<PokedexPage pokedex={pokedex} isLoading={isLoading} />} />
+      <Route
+        path="/"
+        element={<PokedexPage pokedex={pokedex} isLoading={isLoading} />}
+      />
     </Routes>
   );
 
