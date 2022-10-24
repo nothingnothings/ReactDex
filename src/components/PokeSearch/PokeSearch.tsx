@@ -1,9 +1,6 @@
 //REACT
 import React from 'react';
 
-//CSS
-import './PokeSearch.css';
-
 interface PokeSearchProps {
   inputChanged: (event: React.FormEvent) => void;
 }

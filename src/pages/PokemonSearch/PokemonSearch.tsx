@@ -7,9 +7,6 @@ import Pokedex from '../../components/Pokedex/Pokedex';
 //MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
-//CSS
-import './PokemonSearch.css';
-
 interface PokemonSearchProps {
   pokedex: SimplePokemon[];
   isLoading: boolean;

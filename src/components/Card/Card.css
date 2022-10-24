@@ -32,6 +32,8 @@
   text-decoration: none;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1200px) {
   .pokemon-name {
     font-size: 24px;
@@ -44,8 +46,6 @@
     min-width: 8rem;
   }
 }
-
-
 
 @media (max-width: 576px) {
   .pokemon-name {

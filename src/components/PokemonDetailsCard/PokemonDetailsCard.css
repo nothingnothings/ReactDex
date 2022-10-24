@@ -1,3 +1,4 @@
+/* POKEMONS DETAILS CARD */
 .pokemon-details-card {
   border-radius: 100px;
 }
@@ -21,7 +22,6 @@
   background-color: var(--dark-blue);
   opacity: 0.8;
   border-radius: 50px;
-  /* margin-top: 1.7rem !important; */
   min-width: 70%;
 }
 
@@ -61,6 +61,8 @@
 .pokemon-details-card__pokemon-type {
   color: var(--white);
 }
+
+/* POKEMON-DETAILS-CARD__POKEMON-TYPE BACKGROUNDS */
 
 .normal {
   background-color: var(--normal);
@@ -121,6 +123,8 @@
 .fairy {
   background-color: var(--fairy);
 }
+
+/* POKEMON-DETAILS-CARD BACKGROUNDS */
 
 .normal-bg {
   background: linear-gradient(
@@ -288,6 +292,8 @@
     var(--white) 100%
   );
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
   .pokemon-details-card__image {

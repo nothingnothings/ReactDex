@@ -11,10 +11,11 @@ interface PokemonDetailsCardProps {
   pokemon: Pokemon;
 }
 
-// adds zeroes to Pokemon IDS
+//Function: Adds zeroes to Pokemon IDS
 const zeroPad = (num: number, places: number) =>
   String(num).padStart(places, '0');
 
+  
 const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
@@ -57,7 +58,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
             </div>
 
             <div className="pokemon-details-card__body px-5 py-3 py-md-4 mx-5 mt-4">
-            <div className="pokemon-details-card__body__skills d-flex align-items-center my-3">
+              <div className="pokemon-details-card__body__skills d-flex align-items-center my-3">
                 <strong>Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
@@ -71,10 +72,12 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 })}
               </div>
               <div className="pokemon-details-card__body__height d-flex align-items-center my-3">
-                <strong className="py-1">Altura:</strong> <p className="mb-0">&nbsp; {props.pokemon.height * 10} cm</p>
+                <strong className="py-1">Altura:</strong>{' '}
+                <p className="mb-0">&nbsp; {props.pokemon.height * 10} cm</p>
               </div>
               <div className="pokemon-details-card__body__weight d-flex align-items-center my-3">
-                <strong className="py-1">Peso:</strong> &nbsp; {props.pokemon.weight / 10} kg
+                <strong className="py-1">Peso:</strong> &nbsp;{' '}
+                {props.pokemon.weight / 10} kg
               </div>
               <div className="pokemon-details-card__body__experience d-flex align-items-center my-3">
                 <strong className="py-1">Experiência Base:</strong> &nbsp;{' '}

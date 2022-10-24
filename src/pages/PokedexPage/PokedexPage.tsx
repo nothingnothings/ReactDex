@@ -3,7 +3,6 @@ import React from 'react';
 
 //COMPONENTS
 import Pokedex from '../../components/Pokedex/Pokedex';
-import Spinner from '../../components/Spinner/Spinner';
 
 //MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';

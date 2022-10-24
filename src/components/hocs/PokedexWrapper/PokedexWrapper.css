@@ -9,8 +9,8 @@
   font-size: 64px;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
-
   .pokedex-title {
     -webkit-text-stroke-width: 2.5px !important;
   }

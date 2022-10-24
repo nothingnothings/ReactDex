@@ -56,7 +56,6 @@ const Pokedex: React.FC<PokedexProps> = (props) => {
     );
   }
 
-
   return content;
 };
 

@@ -1,3 +1,4 @@
+/* POKEBALL */
 .pokeball {
   width: 300px;
   height: 300px;
@@ -36,6 +37,8 @@
     var(--pokeball-white)
   );
 }
+
+/* ANIMATION */
 
 @keyframes spin {
   0% {
