@@ -31,3 +31,16 @@
 .pokemon-link:hover {
   text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+  .pokemon-name {
+    font-size: 24px;
+  }
+
+  .pokemon-img {
+    max-height: 10rem;
+    max-width: 10rem;
+    min-height: 8rem;
+    min-width: 8rem;
+  }
+}

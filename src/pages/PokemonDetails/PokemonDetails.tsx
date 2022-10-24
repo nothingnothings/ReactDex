@@ -34,7 +34,7 @@ const PokemonDetails: React.FC<Pokemon> = () => {
 
   if (!pokemon) {
     content = (
-      <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
+      <PokedexWrapper message="Quem é esse Pokemon?" isDetails={false}>
         <div>Loading...</div>
       </PokedexWrapper>
     );

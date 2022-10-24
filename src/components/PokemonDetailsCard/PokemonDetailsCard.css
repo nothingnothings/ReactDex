@@ -1,13 +1,16 @@
 /* .pokemon-details-card {
 } */
 
+.pokemon-details-card__pokemon-title {
+  font-weight: bold;
+}
+
 .pokemon-details-card__image-wrapper {
   max-height: 30rem;
   max-width: 30rem;
 }
 
 .pokemon-details-card__image {
-
   height: 20.55rem;
   width: 20rem;
 }
@@ -22,24 +25,179 @@
   border-right: 3px solid black;
   border-top: 3px solid black; */
   /* border-radius: 50px 50px 0 0; */
-    border-radius: 50px 50px 0 0;
-    margin-top: 1.7rem !important;
+  /* border-radius: 50px 50px 0 0; */
+  border-radius: 50px;
+  margin-top: 1.7rem !important;
   min-width: 70%;
 }
 
-.pokemon-details-card__pokemon-title::first-letter,
-.pokemon-details-card__pokemon-type, 
-.pokemon-details-card__body-skill
- {
-  text-transform: capitalize
+.pokemon-details-card__pokemon-title,
+.pokemon-details-card__pokemon-number,
+.pokemon-details-card__pokemon-type,
+.pokemon-details-card__body-skill,
+.pokemon-details-card__body-form {
+  cursor: default;
 }
 
+.pokemon-details-card__pokemon-title::first-letter,
+.pokemon-details-card__pokemon-type,
+.pokemon-details-card__body-skill,
+.pokemon-details-card__body-form {
+  text-transform: capitalize;
+}
 
-
-.pokemon-details-card__body-skill {
+.pokemon-details-card__body-skill,
+.pokemon-details-card__pokemon-type,
+.pokemon-details-card__body-form {
   background-color: var(--white);
-  display: inline-block; 
+  display: inline-block;
   border-radius: 50px;
   color: black;
   font-weight: bold;
+}
+
+.pokemon-details-card__pokemon-type {
+  background-color: green;
+  color: var(--white);
+}
+
+.outer-wrapper {
+  gap: 10.5rem;
+}
+
+.normal {
+  background-color: var(--normal);
+}
+
+.fire {
+  background-color: var(--fire);
+}
+
+.water {
+  background-color: var(--water);
+}
+.electric {
+  background-color: var(--electric);
+}
+.grass {
+  background-color: var(--grass);
+}
+.ice {
+  background-color: var(--ice);
+}
+.fighting {
+  background-color: var(--fighting);
+}
+.poison {
+  background-color: var(--poison);
+}
+.ground {
+  background-color: var(--ground);
+}
+.flying {
+  background-color: var(--flying);
+}
+.psychic {
+  background-color: var(--psychic);
+}
+.bug {
+  background-color: var(--bug);
+}
+.rock {
+  background-color: var(--rock);
+}
+.ghost {
+  background-color: var(--ghost);
+}
+.dragon {
+  background-color: var(--dragon);
+}
+
+.dark {
+  background-color: var(--dark2);
+}
+
+.steel {
+  background-color: var(--steel);
+}
+
+.fairy {
+  background-color: var(--fairy);
+}
+
+.normal-bg {
+  background-color: var(--normal);
+  opacity: 0.8;
+}
+
+.fire-bg {
+  background-color: var(--fire);
+  opacity: 0.8;
+}
+
+.water-bg {
+  background-color: var(--water);
+  opacity: 0.8;
+}
+.electric-bg {
+  background-color: var(--electric);
+  opacity: 0.8;
+}
+.grass-bg {
+  background-color: var(--grass);
+  opacity: 0.8;
+}
+.ice-bg {
+  background-color: var(--ice);
+  opacity: 0.8;
+}
+.fighting-bg {
+  background-color: var(--fighting);
+  opacity: 0.8;
+}
+.poison-bg {
+  background-color: var(--poison);
+  opacity: 0.8;
+}
+.ground-bg {
+  background-color: var(--ground);
+  opacity: 0.8;
+}
+.flying-bg {
+  background-color: var(--flying);
+  opacity: 0.8;
+}
+.psychic-bg {
+  background-color: var(--psychic);
+  opacity: 0.8;
+}
+.bug-bg {
+  background-color: var(--bug);
+  opacity: 0.8;
+}
+.rock-bg {
+  background-color: var(--rock);
+  opacity: 0.8;
+}
+.ghost-bg {
+  background-color: var(--ghost);
+  opacity: 0.8;
+}
+.dragon-bg {
+  background-color: var(--dragon);
+  opacity: 0.8;
+}
+.dark-bg {
+  background-color: var(--dark2);
+  opacity: 0.8;
+}
+
+.steel-bg {
+  background-color: var(--steel);
+  opacity: 0.8;
+}
+
+.fairy-bg {
+  background-color: var(--fairy);
+  opacity: 0.8;
 }
