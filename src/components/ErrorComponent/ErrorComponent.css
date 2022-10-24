@@ -1,0 +1,13 @@
+.error-page-body__message {
+  line-height: 4rem;
+  cursor: default;
+}
+
+.redirect-link {
+  color: var(--pokeball-red);
+}
+
+.redirect-link:hover {
+  text-decoration: none;
+  color: var(--dark);
+}

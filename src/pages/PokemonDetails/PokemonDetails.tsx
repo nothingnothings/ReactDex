@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 ///AXIOS
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 ///COMPONENTS
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
@@ -11,11 +11,14 @@ import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetai
 
 ///MODELS
 import { Pokemon } from '../../models/pokemon.model';
-import Spinner from '../../components/Spinner/Spinner';
+import Spinner from '../../components/UI/Spinner/Spinner';
+import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 const PokemonDetails: React.FC<Pokemon> = () => {
   const [pokemon, setPokemon] = useState<Pokemon>();
   const [detailsLoading, setDetailsLoading] = useState<boolean>(true);
+  const [detailsIsError, setDetailsIsError] = useState<boolean>(false);
+  const [detailsErrorMessage, setDetailsErrorMessage] = useState<string>('');
 
   const params = useParams();
   const pokemonId = params.pokemonId;
@@ -34,11 +37,11 @@ const PokemonDetails: React.FC<Pokemon> = () => {
           return pokemonData;
         });
       })
-      .catch(
-        (err) => {
-          console.log(err);
-        }
-      )
+      .catch((err: AxiosError | Error) => {
+        console.log(err);
+        setDetailsIsError(true);
+        setDetailsErrorMessage(err.message);
+      });
   }, []);
 
   if (!pokemon && detailsLoading) {
@@ -52,6 +55,12 @@ const PokemonDetails: React.FC<Pokemon> = () => {
       <PokedexWrapper message="Quem é esse Pokemon?" isDetails={true}>
         <PokemonDetailsCard pokemon={pokemon!}></PokemonDetailsCard>
       </PokedexWrapper>
+    );
+  }
+
+  if (detailsIsError) {
+    content = (
+      <ErrorComponent errorMessage={detailsErrorMessage}></ErrorComponent>
     );
   }
 

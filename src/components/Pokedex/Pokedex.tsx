@@ -11,7 +11,7 @@ import { SimplePokemon } from '../../models/simplepokemon.model';
 
 //CSS
 import './Pokedex.css';
-import Spinner from '../Spinner/Spinner';
+import Spinner from '../UI/Spinner/Spinner';
 
 interface PokedexProps {
   pokemons: SimplePokemon[];

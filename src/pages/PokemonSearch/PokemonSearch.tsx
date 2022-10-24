@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 ///COMPONENTS
 import Pokedex from '../../components/Pokedex/Pokedex';
+import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 //MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
@@ -10,6 +11,8 @@ import { SimplePokemon } from '../../models/simplepokemon.model';
 interface PokemonSearchProps {
   pokedex: SimplePokemon[];
   isLoading: boolean;
+  isError: boolean;
+  errorMessage: string;
 }
 
 const PokemonSearch: React.FC<PokemonSearchProps> = (props) => {
@@ -25,8 +28,12 @@ const PokemonSearch: React.FC<PokemonSearchProps> = (props) => {
     return pokemon.name.toUpperCase().includes(searchedPokemon.toUpperCase());
   });
 
-  return (
-    <React.Fragment>
+  let page;
+
+  if (props.isError && searchedPokemon.length === 0) {
+    page = <ErrorComponent errorMessage={props.errorMessage!}></ErrorComponent>;
+  } else {
+    page = (
       <Pokedex
         wrapperMessage={'Procurar por um Pokémon'}
         isLoading={props.isLoading}
@@ -35,8 +42,10 @@ const PokemonSearch: React.FC<PokemonSearchProps> = (props) => {
         inputChanged={inputChangedHandler}
         pokemons={filteredPokemons}
       ></Pokedex>
-    </React.Fragment>
-  );
+    );
+  }
+
+  return page;
 };
 
 export default PokemonSearch;

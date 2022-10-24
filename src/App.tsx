@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
 ///AXIOS
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 ///COMPONENTS
-import Layout from './components/Layout/Layout';
+import Layout from './components/hocs/Layout/Layout';
 import PokedexPage from './pages/PokedexPage/PokedexPage';
 import PokemonSearch from './pages/PokemonSearch/PokemonSearch';
 import PokemonDetails from './pages/PokemonDetails/PokemonDetails';
@@ -17,6 +17,8 @@ import { SimplePokemon } from './models/simplepokemon.model';
 function App() {
   const [pokedex, setPokedex] = useState<SimplePokemon[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isError, setIsError] = useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   useEffect(() => {
     axios
@@ -36,8 +38,10 @@ function App() {
         setPokedex(alteredPokemons);
         setIsLoading(false);
       })
-      .catch((err) => {
+      .catch((err: AxiosError | Error) => {
         console.log(err);
+        setIsError(true);
+        setErrorMessage(err.message);
       });
   }, []);
 
@@ -45,7 +49,14 @@ function App() {
     <Routes>
       <Route
         path="/search"
-        element={<PokemonSearch pokedex={pokedex} isLoading={isLoading} />}
+        element={
+          <PokemonSearch
+            pokedex={pokedex}
+            isLoading={isLoading}
+            isError={isError}
+            errorMessage={errorMessage}
+          />
+        }
       />
       {/* 
 // @ts-ignore */}
@@ -53,7 +64,14 @@ function App() {
       <Route path="*" element={<Navigate replace to="/" />} />
       <Route
         path="/"
-        element={<PokedexPage pokedex={pokedex} isLoading={isLoading} />}
+        element={
+          <PokedexPage
+            pokedex={pokedex}
+            isLoading={isLoading}
+            isError={isError}
+            errorMessage={errorMessage}
+          />
+        }
       />
     </Routes>
   );

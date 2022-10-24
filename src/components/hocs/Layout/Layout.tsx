@@ -3,7 +3,7 @@ import React from 'react';
 
 //COMPONENTS
 
-import Toolbar from '../../components/Toolbar/Toolbar';
+import Toolbar from '../../UI/Toolbar/Toolbar';
 
 interface LayoutProps {
   children?: JSX.Element;

@@ -1,5 +1,5 @@
 /* POKEBALL */
-.pokeball {
+/* .pokeball {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -36,16 +36,7 @@
     var(--pokeball-white) 32%,
     var(--pokeball-white)
   );
-}
+} */
 
 /* ANIMATION */
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
