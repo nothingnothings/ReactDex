@@ -1,9 +1,9 @@
 //REACT
 import React from 'react';
-import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 //COMPONENTS
 import Pokedex from '../../components/Pokedex/Pokedex';
+import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 //MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';

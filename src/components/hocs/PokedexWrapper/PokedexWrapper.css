@@ -1,13 +1,18 @@
+/* POKEDEX WRAPPER */
 .pokedex-wrapper {
   background-color: var(--white);
   height: 100%;
 }
-.details-wrapper {
-  height: 100vh;
-}
+
 .pokedex-title h1 {
   font-size: 64px;
 }
+
+/* DETAILS-WRAPPER */
+.details-wrapper {
+  height: 100vh;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {

@@ -1,10 +1,8 @@
 //COMPONENTS
-
 import PokedexWrapper from '../hocs/PokedexWrapper/PokedexWrapper';
 import Pokeball from '../UI/PokeBall/Pokeball';
 
 //CSS
-
 import './ErrorComponent.css';
 
 interface ErrorComponentProps {

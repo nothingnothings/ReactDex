@@ -5,13 +5,13 @@ import React from 'react';
 import PokedexWrapper from '../hocs/PokedexWrapper/PokedexWrapper';
 import PokeSearch from '../PokeSearch/PokeSearch';
 import Card from '../Card/Card';
+import Spinner from '../UI/Spinner/Spinner';
 
 //MODELS
 import { SimplePokemon } from '../../models/simplepokemon.model';
 
 //CSS
 import './Pokedex.css';
-import Spinner from '../UI/Spinner/Spinner';
 
 interface PokedexProps {
   pokemons: SimplePokemon[];

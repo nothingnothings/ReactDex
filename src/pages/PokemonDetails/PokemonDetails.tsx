@@ -8,11 +8,11 @@ import axios, { AxiosError } from 'axios';
 ///COMPONENTS
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
 import PokemonDetailsCard from '../../components/PokemonDetailsCard/PokemonDetailsCard';
+import Spinner from '../../components/UI/Spinner/Spinner';
+import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 ///MODELS
 import { Pokemon } from '../../models/pokemon.model';
-import Spinner from '../../components/UI/Spinner/Spinner';
-import ErrorComponent from '../../components/ErrorComponent/ErrorComponent';
 
 const PokemonDetails: React.FC<Pokemon> = () => {
   const [pokemon, setPokemon] = useState<Pokemon>();

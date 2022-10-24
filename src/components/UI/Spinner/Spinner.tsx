@@ -1,6 +1,5 @@
-//CSS
+//COMPONENTS
 import Pokeball from '../PokeBall/Pokeball';
-import './Spinner.css';
 
 const Spinner = () => {
   return (

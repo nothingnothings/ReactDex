@@ -15,9 +15,13 @@ import PokemonDetails from './pages/PokemonDetails/PokemonDetails';
 import { SimplePokemon } from './models/simplepokemon.model';
 
 function App() {
+  // Defines pokemon list
   const [pokedex, setPokedex] = useState<SimplePokemon[]>([]);
+  // Sets loading state of pokemon list
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  //  Sets error state of pokemon list load process
   const [isError, setIsError] = useState<boolean>(false);
+  //  Sets error message of the pokemon list load process (if present)
   const [errorMessage, setErrorMessage] = useState<string>('');
 
   useEffect(() => {

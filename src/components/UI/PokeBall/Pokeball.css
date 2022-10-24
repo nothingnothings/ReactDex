@@ -1,3 +1,4 @@
+/*  POKEBALL  */
 .pokeball {
   width: 300px;
   height: 300px;
@@ -14,8 +15,6 @@
     var(--pokeball-black) 53%,
     var(--pokeball-white) 53%
   );
-  /* animation-iteration-count: infinite;
-  animation-duration: 1.5s; */
 }
 
 .pokeball::after {
@@ -34,6 +33,8 @@
     var(--pokeball-white)
   );
 }
+
+/* ANIMATION */
 
 .spin {
   animation: spin;
