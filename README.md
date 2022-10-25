@@ -220,35 +220,29 @@ O output de production de `create-react-app`, que pode ser visualizado no branch
 
 ## Arquivos de Configuração do Projeto (package.json e tsconfig.json)
 
-The package.json file used in the project:
+O arquivo package.json utilizado no projeto:
 
 ```
 {
-  "name": "node-shop-rest-api",
-  "version": "0.2.0",
+  "name": "projeto-pokemon",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://nothingnothings.github.io/NodeShopRestAPI",
+  "homepage": "https://nothingnothings.github.io/pokemonapi",
   "dependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@reduxjs/toolkit": "^1.8.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/react-fontawesome": "^1.6.5",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.2.0",
-    "font-awesome": "^4.7.0",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^1.1.3",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.2",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "react-stripe-checkout": "^2.6.3",
-    "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
+    "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -274,12 +268,46 @@ The package.json file used in the project:
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.15",
-    "gh-pages": "^4.0.0"
   }
 }
+```
+
+
+O arquivo tsconfig.json utilizado no projeto: 
+
+```
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}
+
+
+
+
+
 ```
 
 ## Instalação/Utilização 
