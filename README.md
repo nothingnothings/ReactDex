@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nothingnothings.github.io/NodeShopRestAPI"><strong>[https://nothingnothings.github.io/pokemonapi]</strong></a>
+  <a href="https://nothingnothings.github.io/NodeShopRestAPI"><strong>https://nothingnothings.github.io/pokemonapi</strong></a>
   <br>
 </p>
 
