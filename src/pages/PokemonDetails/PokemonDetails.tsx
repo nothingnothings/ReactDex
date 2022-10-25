@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 ///AXIOS
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 
 ///COMPONENTS
 import PokedexWrapper from '../../components/hocs/PokedexWrapper/PokedexWrapper';
@@ -28,7 +28,7 @@ const PokemonDetails: React.FC<Pokemon> = () => {
   useEffect(() => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
-      .then((res) => {
+      .then((res: AxiosResponse) => {
         return res.data;
       })
       .then((pokemonData: Pokemon) => {

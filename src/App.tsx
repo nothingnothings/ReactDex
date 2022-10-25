@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
 ///AXIOS
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 
 ///COMPONENTS
 import Layout from './components/hocs/Layout/Layout';
@@ -29,7 +29,7 @@ function App() {
     // 800 pokemon is quite a lot, so adjust to lower numbers for mobile devices
     axios
       .get('https://pokeapi.co/api/v2/pokemon?limit=800')
-      .then((res) => {
+      .then((res: AxiosResponse) => {
         return res.data.results;
       })
       .then((pokemons: SimplePokemon[]) => {
@@ -83,7 +83,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter basename="/pokemonapi">
+    <BrowserRouter>
       <ScrollToTop />
       <div>
         <Layout>{routes}</Layout>
