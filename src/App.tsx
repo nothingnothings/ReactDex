@@ -83,7 +83,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter basename="/pokemonapi">
+    <BrowserRouter>
       <ScrollToTop />
       <div>
         <Layout>{routes}</Layout>

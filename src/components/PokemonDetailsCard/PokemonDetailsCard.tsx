@@ -59,7 +59,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
 
             <div className="pokemon-details-card__body px-5 py-3 py-md-4 mx-5 mt-4">
               <div className="pokemon-details-card__body__skills text-nowrap d-flex flex-wrap flex-sm-nowrap align-items-center my-3">
-                <strong>Habilidades:</strong>{' '}
+                <strong className="mb-2 mb-sm-0">Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
                     <div
@@ -84,7 +84,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 {props.pokemon.base_experience}xp
               </div>
               <div className="pokemon-details-card__body__forms d-flex flex-wrap align-items-center">
-                <strong>Formas:</strong>{' '}
+                <strong className="mb-2 mb-sm-0">Formas:</strong>{' '}
                 {props.pokemon.forms.map((formObject: Form) => {
                   return (
                     <div
