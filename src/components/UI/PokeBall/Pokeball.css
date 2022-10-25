@@ -65,11 +65,8 @@
     border: 10px solid var(--pokeball-black);
     height: 60px;
     width: 60px;
-
   }
 }
-
-
 
 @media (max-width: 440px) {
   .pokeball {
@@ -82,6 +79,5 @@
     border: 7.5px solid var(--pokeball-black);
     height: 45px;
     width: 45px;
-
   }
 }
