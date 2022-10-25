@@ -43,7 +43,7 @@ O app foi inicializado/bootstrapped com o comando/environment `create-react-app`
  - ReactJS (library/framework JavaScript, app composto inteiramente por React components)
  - Typescript (para a type safety dos objetos recebidos pelos endpoints do backend, Models e Interfaces, etc.)
  - React Router (para a navegação entre as diferentes "páginas" do aplicativo)
- - Manage local de state (2 states principais; o central, em "App.js", usado nas páginas "Pokedex", e o relativo aos pokémons indivíduais,  localizado na página "PokemonDetails", acessada pela route "/pokedex/:idDoPokemon")
+ - Manage local de state (dois states principais: o central, em "App.js", usado nas páginas "Pokedex" e "Procurar por um Pokémon", e o relativo aos pokémons indivíduais,  localizado na página "PokemonDetails", acessada pela route "/pokedex/:idDoPokemon")
  - Bootstrap (usado na barra de navegação e no posicionamento geral dos elementos na página, com "container", "row" e "col")
  - Axios (para a comunicação, requests e responses, entre este aplicativo frontend e o backend visado/buscado por ele, os API endpoints disponibilizados pelo domínio "pokeapi.co")
  
