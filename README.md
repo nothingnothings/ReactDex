@@ -57,240 +57,125 @@ O ambiente de desenvolvimento (com utilização da ferramenta/environment/worfkl
 
 .\
 │
+├── .github\
+│   │
+│   └── workflows\
+│       └── publish.yml
+│
+│
 ├── public\
 │   │
-│   ├── images\
-│   │   ├── 1658431838529-Bike.png
-│   │   ├── 1658432590831-Boat.png
-│   │   ├── 1658433107407-Pencil.png
-│   │   ├── 1658433305838-Skateboard.png
-│   │   ├── 1658433495040-keyboard.png
-│   │   ├── 1658434189280-A set of tires.png
-│   │   ├── 1658434649972-Boomerang.png
-│   │   ├── 1658435067043-Drums.png
-│   │   └── 1658435608982-Violin.png
+│   ├── fonts\
+│   │   └── Pokemon Solid.ttf
 │   │
 │   ├── 404.html
-│   ├── NodeShopBlack.png
-│   ├── apple-touch-icon.png
-│   ├── browserconfig.xml
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
 │   ├── favicon.ico
 │   ├── index.html
 │   ├── logo192.png
 │   ├── logo512.png
-│   ├── manifest.json
-│   ├── mstile-150x150.png
-│   └── site.webmanifest
+│   └── manifest.json
+│
+├── snapshot\
+│   ├── Reactdex1.png
+│   └── Reactdex2.png
 │
 ├── src\
 │   │
 │   ├── components\
 │   │   │
-│   │   ├── Backdrop\
-│   │   │   ├── Backdrop.css
-│   │   │   └── Backdrop.js
+│   │   ├── Card\
+│   │   │   ├── Card.css
+│   │   │   └── Card.tsx
 │   │   │
-│   │   ├── Cart\
-│   │   │   │
-│   │   │   ├── CartItemList\
-│   │   │   │   │
-│   │   │   │   ├── CartItem\
-│   │   │   │   │   ├── CartItem.css
-│   │   │   │   │   └── CartItem.js
-│   │   │   │   │
-│   │   │   │   ├── CartItemList.css
-│   │   │   │   └── CartItemList.js
-│   │   │   │
-│   │   │   ├── NoProduct\
-│   │   │   │   ├── NoProduct.css
-│   │   │   │   └── NoProduct.js
-│   │   │   │
-│   │   │   ├── Cart.css
-│   │   │   └── Cart.js
+│   │   ├── ErrorComponent\
+│   │   │   ├── ErrorComponent.css
+│   │   │   └── ErrorComponent.tsx
 │   │   │
-│   │   ├── Footer\
-│   │   │   ├── Footer.css
-│   │   │   └── Footer.js
+│   │   ├── PokeSearch\
+│   │   │   └── PokeSearch.tsx
 │   │   │
-│   │   ├── Grid\
-│   │   │   ├── Grid.css
-│   │   │   └── Grid.js
+│   │   ├── Pokedex\
+│   │   │   ├── Pokedex.css
+│   │   │   └── Pokedex.tsx
 │   │   │
-│   │   ├── Navigation\
-│   │   │   │
-│   │   │   ├── MainNavigation\
-│   │   │   │   ├── MainNavigation.css
-│   │   │   │   └── MainNavigation.js
-│   │   │   │
-│   │   │   ├── MobileNavigation\
-│   │   │   │   ├── MobileNavigation.css
-│   │   │   │   └── MobileNavigation.js
-│   │   │   │
-│   │   │   ├── NavigationItems\
-│   │   │   │   │
-│   │   │   │   ├── NavigationItem\
-│   │   │   │   │   ├── NavigationItem.css
-│   │   │   │   │   └── NavigationItem.js
-│   │   │   │   │
-│   │   │   │   ├── NavigationItems.css
-│   │   │   │   └── NavigationItems.js
-│   │   │   │
-│   │   │   └── SideDrawer\
-│   │   │       │
-│   │   │       └── DrawerToggle\
-│   │   │           ├── DrawerToggle.css
-│   │   │           └── DrawerToggle.js
-│   │   │
-│   │   │
-│   │   │
-│   │   ├── OrderBoard\
-│   │   │   │
-│   │   │   ├── Orders\
-│   │   │   │   │
-│   │   │   │   ├── OrdersItem\
-│   │   │   │   │   ├── OrdersItem.css
-│   │   │   │   │   └── OrdersItem.js
-│   │   │   │   │
-│   │   │   │   ├── Orders.css
-│   │   │   │   └── Orders.js
-│   │   │   │
-│   │   │   ├── OrderBoard.css
-│   │   │   └── OrderBoard.js
-│   │   │
-│   │   ├── Pagination\
-│   │   │   ├── Pagination.css
-│   │   │   └── Pagination.js
-│   │   │
-│   │   ├── ProductItem\
-│   │   │   │
-│   │   │   ├── Hexagon\
-│   │   │   │   ├── Hexagon.css
-│   │   │   │   └── Hexagon.js
-│   │   │   │
-│   │   │   ├── ProductBox\
-│   │   │   │   ├── ProductBox.css
-│   │   │   │   └── ProductBox.js
-│   │   │   │
-│   │   │   ├── ProductItem.css
-│   │   │   └── ProductItem.js
-│   │   │
-│   │   ├── ProductList\
-│   │   │   ├── ProductList.css
-│   │   │   └── ProductList.js
-│   │   │
-│   │   ├── Toolbar\
-│   │   │   ├── Toolbar.css
-│   │   │   └── Toolbar.js
+│   │   ├── PokemonDetailsCard\
+│   │   │   ├── PokemonDetailsCard.css
+│   │   │   └── PokemonDetailsCard.tsx
 │   │   │
 │   │   ├── UI\
 │   │   │   │
-│   │   │   ├── Button\
-│   │   │   │   ├── Button.css
-│   │   │   │   └── Button.js
+│   │   │   ├── PokeBall\
+│   │   │   │   ├── Pokeball.css
+│   │   │   │   └── Pokeball.tsx
 │   │   │   │
-│   │   │   ├── Input\
-│   │   │   │   ├── Input.css
-│   │   │   │   └── Input.js
+│   │   │   ├── Spinner\
+│   │   │   │   └── Spinner.tsx
 │   │   │   │
-│   │   │   └── Spinner\
-│   │   │       ├── Spinner.css
-│   │   │       └── Spinner.js
+│   │   │   └── Toolbar\
+│   │   │       │
+│   │   │       ├── MainNavigation\
+│   │   │       │   │
+│   │   │       │   ├── NavigationItems\
+│   │   │       │   │   │
+│   │   │       │   │   ├── NavigationItem\
+│   │   │       │   │   │   ├── NavigationItem.css
+│   │   │       │   │   │   └── NavigationItem.tsx
+│   │   │       │   │   │
+│   │   │       │   │   ├── NavigationItems.css
+│   │   │       │   │   └── NavigationItems.tsx
+│   │   │       │   │
+│   │   │       │   ├── MainNavigation.css
+│   │   │       │   └── MainNavigation.tsx
+│   │   │       │
+│   │   │       ├── Toolbar.css
+│   │   │       └── Toolbar.tsx
 │   │   │
 │   │   │
-│   │   └── Wrapper\
-│   │       ├── Wrapper.css
-│   │       └── Wrapper.js
+│   │   ├── Utility\
+│   │   │   │
+│   │   │   └── ScrollToTop\
+│   │   │       └── ScrollToTop.tsx
+│   │   │
+│   │   │
+│   │   └── hocs\
+│   │       │
+│   │       ├── Layout\
+│   │       │   └── Layout.tsx
+│   │       │
+│   │       └── PokedexWrapper\
+│   │           ├── PokedexWrapper.css
+│   │           └── PokedexWrapper.tsx
 │   │
 │   │
-│   ├── hoc\
-│   │   │
-│   │   ├── Auxiliary\
-│   │   │   └── Auxiliary.js
-│   │   │
-│   │   ├── Layout\
-│   │   │   ├── Layout.css
-│   │   │   └── Layout.js
-│   │   │
-│   │   └── ScrollToTop\
-│   │       └── ScrollToTop.js
 │   │
+│   ├── models\
+│   │   ├── pokemon.model.ts
+│   │   └── simplepokemon.model.ts
 │   │
 │   ├── pages\
 │   │   │
-│   │   ├── Admin-Shop\
-│   │   │   ├── Admin-Shop.css
-│   │   │   └── AdminShop.js
+│   │   ├── PokedexPage\
+│   │   │   └── PokedexPage.tsx
 │   │   │
-│   │   ├── Auth\
-│   │   │   │
-│   │   │   ├── Logout\
-│   │   │   │   └── Logout.js
-│   │   │   │
-│   │   │   ├── Auth.css
-│   │   │   └── Auth.js
+│   │   ├── PokemonDetails\
+│   │   │   └── PokemonDetails.tsx
 │   │   │
-│   │   ├── Cart\
-│   │   │   ├── Cart.css
-│   │   │   └── Cart.js
-│   │   │
-│   │   ├── Checkout\
-│   │   │   ├── Checkout.css
-│   │   │   └── Checkout.js
-│   │   │
-│   │   ├── Landing-Page\
-│   │   │   ├── Landing-Page.css
-│   │   │   └── Landing-Page.js
-│   │   │
-│   │   ├── Orders\
-│   │   │   ├── Orders.css
-│   │   │   └── Orders.js
-│   │   │
-│   │   ├── Product-Detail\
-│   │   │   ├── ProductDetail.css
-│   │   │   └── ProductDetail.js
-│   │   │
-│   │   ├── ProductEditor\
-│   │   │   ├── ProductEditor.css
-│   │   │   └── ProductEditor.js
-│   │   │
-│   │   └── Shop\
-│   │       ├── Shop.css
-│   │       └── Shop.js
+│   │   └── PokemonSearch\
+│   │       └── PokemonSearch.tsx
 │   │
 │   │
-│   ├── shared\
-│   │   └── util.js
-│   │
-│   ├── store\
-│   │   │
-│   │   ├── actions\
-│   │   │   ├── auth.js
-│   │   │   ├── authActionTypes.js
-│   │   │   ├── cart.js
-│   │   │   ├── cartActionTypes.js
-│   │   │   ├── order.js
-│   │   │   ├── orderActionTypes.js
-│   │   │   ├── shop.js
-│   │   │   └── shopActionTypes.js
-│   │   │
-│   │   └── reducers\
-│   │       ├── authReducer.js
-│   │       ├── cartReducer.js
-│   │       ├── orderReducer.js
-│   │       └── shopReducer.js
-│   │
-│   │
-│   ├── App.js
-│   ├── axios-orders.js
+│   ├── App.tsx
 │   ├── index.css
-│   └── index.js
+│   ├── index.tsx
+│   └── logo.svg
 │
-├── .gitignore
 ├── README.md
 ├── package-lock.json
-└── package.json
+├── package.json
+├── react-app-env.d.ts
+└── tsconfig.json
 ```
 
 
