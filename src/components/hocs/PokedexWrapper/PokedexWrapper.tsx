@@ -17,7 +17,7 @@ const PokedexWrapper: React.FC<PokedexWrapperProps> = (props) => {
         props.isDetails ? 'details-wrapper' : ''
       }`}
     >
-      <div className="pokedex-title pt-2 mt-2 mt-md-0">
+      <div className="pokedex-title pt-2 mt-4 mt-md-0">
         <h1 className="text-center text-md-nowrap mt-5 pt-5">{props.message}</h1>
       </div>
       {props.children}
