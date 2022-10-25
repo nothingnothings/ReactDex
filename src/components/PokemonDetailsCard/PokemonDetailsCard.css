@@ -314,3 +314,10 @@
     padding: 1rem !important;
   }
 }
+
+@media (max-width: 400px) {
+  .pokemon-details-card__image {
+    height: 10rem;
+    width: 10rem;
+  }
+}
