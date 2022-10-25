@@ -7,6 +7,7 @@ import axios, { AxiosError } from 'axios';
 
 ///COMPONENTS
 import Layout from './components/hocs/Layout/Layout';
+import ScrollToTop from './components/Utility/ScrollToTop/ScrollToTop';
 import PokedexPage from './pages/PokedexPage/PokedexPage';
 import PokemonSearch from './pages/PokemonSearch/PokemonSearch';
 import PokemonDetails from './pages/PokemonDetails/PokemonDetails';
