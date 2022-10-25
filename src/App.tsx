@@ -26,6 +26,7 @@ function App() {
   const [errorMessage, setErrorMessage] = useState<string>('');
 
   useEffect(() => {
+    // 800 pokemon is quite a lot, so adjust to lower numbers for mobile devices
     axios
       .get('https://pokeapi.co/api/v2/pokemon?limit=800')
       .then((res) => {
@@ -82,7 +83,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter basename="pokemonapi">
+    <BrowserRouter>
       <ScrollToTop />
       <div>
         <Layout>{routes}</Layout>
