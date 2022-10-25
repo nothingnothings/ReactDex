@@ -316,8 +316,25 @@
 }
 
 @media (max-width: 400px) {
+  .pokemon-details-card__pokemon-title {
+    font-size: 32px;
+  }
+
+  .pokemon-details-card__pokemon-number {
+    margin-left: 0 !important;
+  }
+
+  .pokemon-number-content {
+    font-size: 20px;
+    padding: 0.75rem;
+  }
+
   .pokemon-details-card__image {
     height: 10rem;
     width: 10rem;
+  }
+
+  .pokemon-details-card__pokemon-type {
+    font-size: 14px;
   }
 }
