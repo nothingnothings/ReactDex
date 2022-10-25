@@ -52,49 +52,36 @@
   }
 }
 
-
-
-
 /* MEDIA QUERIES */
 
+@media (max-width: 540px) {
+  .pokeball {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--pokeball-black);
+  }
+
+  .pokeball::after {
+    border: 10px solid var(--pokeball-black);
+    height: 60px;
+    width: 60px;
+
+  }
+}
 
 
-@media(max-width: 540px) {
 
+@media (max-width: 440px) {
+  .pokeball {
+    width: 150px;
+    height: 150px;
+    border: 7.5px solid var(--pokeball-black);
+  }
 
-    .pokeball {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 10px solid var(--pokeball-black);
-        background: linear-gradient(
-          to bottom,
-          var(--pokeball-red),
-          var(--pokeball-red) 47%,
-          var(--pokeball-black) 47%,
-          var(--pokeball-black) 53%,
-          var(--pokeball-white) 53%
-        );
-      }
-      
-      .pokeball::after {
-        content: '';
-        display: block;
-        background: var(--pokeball-white);
-        border: 10px solid var(--pokeball-black);
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        background-image: radial-gradient(
-          circle at center,
-          var(--grey) 0%,
-          var(--grey) 30%,
-          var(--pokeball-white) 32%,
-          var(--pokeball-white)
-        );
-      }
+  .pokeball::after {
+    border: 7.5px solid var(--pokeball-black);
+    height: 45px;
+    width: 45px;
 
+  }
 }
