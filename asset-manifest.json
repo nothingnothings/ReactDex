@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pokemonapi/static/css/main.d8663289.css",
-    "main.js": "/pokemonapi/static/js/main.1b5ebfd4.js",
+    "main.js": "/pokemonapi/static/js/main.96197cff.js",
     "static/media/Pokemon Solid.ttf": "/pokemonapi/static/media/Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf",
     "index.html": "/pokemonapi/index.html",
     "main.d8663289.css.map": "/pokemonapi/static/css/main.d8663289.css.map",
-    "main.1b5ebfd4.js.map": "/pokemonapi/static/js/main.1b5ebfd4.js.map"
+    "main.96197cff.js.map": "/pokemonapi/static/js/main.96197cff.js.map"
   },
   "entrypoints": [
     "static/css/main.d8663289.css",
-    "static/js/main.1b5ebfd4.js"
+    "static/js/main.96197cff.js"
   ]
 }
