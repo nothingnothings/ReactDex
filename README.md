@@ -185,43 +185,34 @@ O output de production de `create-react-app`, que pode ser visualizado no branch
 ```
 .\
 │
-├── images\
-│   ├── 1658431838529-Bike.png
-│   ├── 1658432590831-Boat.png
-│   ├── 1658433107407-Pencil.png
-│   ├── 1658433305838-Skateboard.png
-│   ├── 1658433495040-keyboard.png
-│   ├── 1658434189280-A set of tires.png
-│   ├── 1658434649972-Boomerang.png
-│   ├── 1658435067043-Drums.png
-│   └── 1658435608982-Violin.png
+├── fonts\
+│   └── Pokemon Solid.ttf
 │
 ├── static\
 │   │
 │   ├── css\
-│   │   ├── main.fa8e2a93.css
-│   │   └── main.fa8e2a93.css.map
+│   │   ├── main.d8663289.css
+│   │   └── main.d8663289.css.map
 │   │
-│   └── js\
-│       ├── main.4e33800d.js
-│       ├── main.4e33800d.js.LICENSE.txt
-│       └── main.4e33800d.js.map
+│   ├── js\
+│   │   ├── main.006563d5.js
+│   │   ├── main.006563d5.js.LICENSE.txt
+│   │   └── main.006563d5.js.map
+│   │
+│   └── media\
+│       └── Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf
+│
 │
 ├── .nojekyll
 ├── 404.html
-├── NodeShopBlack.png
-├── apple-touch-icon.png
 ├── asset-manifest.json
-├── browserconfig.xml
 ├── favicon-16x16.png
 ├── favicon-32x32.png
 ├── favicon.ico
 ├── index.html
 ├── logo192.png
 ├── logo512.png
-├── manifest.json
-├── mstile-150x150.png
-└── site.webmanifest
+└── manifest.json
 ```
 
 
