@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = (props) => {
             src={
               props.pokemon.id !== 778 && props.pokemon.id !== 774
                 ? `https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`
-                : '/favicon.ico'
+                : 'https://img.pokemondb.net/artwork/large/pikachu.jpg'
             }
           />
         </div>
