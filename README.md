@@ -325,15 +325,9 @@ Para usar este projeto, clone-o usando Git:
 - Design criado com CSS
 - Design responsivo (adaptativo, suporte a dispositivos móveis e desktop) criado com Bootstrap, Flexbox e media queries
 - Utilização dos recursos GitHub Actions e GitHub Pages com a ferramenta `create-react-app` para construir um workflow ininterrupto (transição da fase de desenvolvimento para a fase de produção/implementação). A partir do comando `git push`, o GitHub Actions transfere o conteúdo do branch `master` para dentro do branch `gh-pages`, o qual então implementa/faz deploy do app no endereço https://nothingnothings.github.io/NodeShopRestAPI/
-- For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials `exemplo@exemplo.com` (email field) and `exemplo` (password field). Creation of additional users ("No account? Join NodeShop") is possible in the complete app (in this demo app, the account creation endpoints are disabled). Furthermore, the "Orders" made by the user are reset every 60 minutes (MongoDB Time to Live Index feature), and the products added to the "Cart", every 8 hours (MongoDB "Scheduled Trigger" feature)
-- Working "Shopping Cart" feature ("Add" and "Remove" products feature, with interactive "number of items" icon, synchronized with the global Redux state), implemented with `react-redux`
-- Form validation logic, powered by ReactJS's state management, in the "Get Started" page
-- Simple pagination logic for the list of products
-- Page redirection, made possible by the usage of React Router
-- Usage of Axios for communication with the Node.js (Express.js) backend, which manages the "User", "Product", "Order" and "Cart" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
-- Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
-- Animated custom "Loading..." Spinner
-- Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
-- Font Awesome and Bootstrap usage (in the Footer component)
+- Utilização do pacote/ferramenta Axios para a comunicação com o backend "pokeapi.co", que fornece os dados dos Pokémons (nomes, IDs, peso, altura, tipos, abilidades, etc) ao aplicativo React
+- Utilização de recursos integrais da library ReactJS, como os hooks `useState()` e `useEffect()`
+- Spinner customizado de carregamento (pokebola)
+- Página de erro customizada, com output da mensagem/motivo do erro ao usuário
 - Custom favicon, compatible with multiple devices
 
