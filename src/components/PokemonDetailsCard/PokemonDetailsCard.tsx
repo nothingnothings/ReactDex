@@ -58,7 +58,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
             </div>
 
             <div className="pokemon-details-card__body px-5 py-3 py-md-4 mx-5 mt-4">
-              <div className="pokemon-details-card__body__skills d-flex align-items-center my-3">
+              <div className="pokemon-details-card__body__skills text-nowrap d-flex align-items-center my-3">
                 <strong>Habilidades:</strong>{' '}
                 {props.pokemon.abilities.map((abilityObject: Ability) => {
                   return (
