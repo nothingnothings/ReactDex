@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=800')
+      .get('https://poke2api.co/api/v2/pokemon?limit=800')
       .then((res) => {
         return res.data.results;
       })
