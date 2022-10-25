@@ -25,8 +25,10 @@ const ErrorComponent = (props: ErrorComponentProps) => {
                   </a>{' '}
                   se deseja retornar ao início.
                 </h1>
-
-                <h2 className='text-left mt-5 pt-2'><strong>Motivo do erro: &nbsp; </strong>{props.errorMessage}</h2>
+                <h2 className="text-left mt-5 pt-2">
+                  <strong>Motivo do erro: &nbsp; </strong>
+                  {props.errorMessage}
+                </h2>
               </div>
             </div>
           </div>
