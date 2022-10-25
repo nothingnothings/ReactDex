@@ -49,7 +49,7 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
               </div>
             </div>
 
-            <div className="pokemon-details-card__image-wrapper d-flex justify-content-center mt-5">
+            <div className="pokemon-details-card__image-wrapper d-flex justify-content-center  mt-4 mt-sm-5">
               <img
                 src={`https://img.pokemondb.net/artwork/large/${props.pokemon.name}.jpg`}
                 className="pokemon-details-card__image"
