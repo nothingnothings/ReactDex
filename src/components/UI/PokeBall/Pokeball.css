@@ -34,8 +34,9 @@
   );
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 
+/* LOADING */
 .spin {
   animation: spin;
   animation-iteration-count: infinite;
@@ -49,6 +50,41 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* ERROR */
+
+.wiggle {
+  animation: wiggle;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(0, 0);
+  }
+  3.78571% {
+    transform: translate(15px, 0);
+  }
+  6.57143% {
+    transform: translate(0, 0);
+  }
+  9.35714% {
+    transform: translate(15px, 0);
+  }
+  12.14286% {
+    transform: translate(0, 0);
+  }
+  15.92857% {
+    transform: translate(15px, 0);
+  }
+  18.71429% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
