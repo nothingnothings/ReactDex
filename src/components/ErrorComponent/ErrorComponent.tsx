@@ -12,7 +12,7 @@ interface ErrorComponentProps {
 const ErrorComponent = (props: ErrorComponentProps) => {
   return (
     <PokedexWrapper isDetails={true} message="Pokédex">
-      <div className="error-wrapper mt-5 pt-5">
+      <div className="error-wrapper mt-sm-5 pt-sm-5">
         <div className="row d-flex justify-content-center mt-5 pt-5">
           <Pokeball isSpin={false}></Pokeball>
           <div className="container">
