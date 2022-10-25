@@ -15,7 +15,6 @@ interface PokemonDetailsCardProps {
 const zeroPad = (num: number, places: number) =>
   String(num).padStart(places, '0');
 
-  
 const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
   return (
     <div className="container">
@@ -80,11 +79,11 @@ const PokemonDetailsCard: React.FC<PokemonDetailsCardProps> = (props) => {
                 {props.pokemon.weight / 10} kg
               </div>
               <div className="pokemon-details-card__body__experience d-flex align-items-center my-3">
-                <strong className="py-1">Experiência Base:</strong> &nbsp;{' '}
+                <strong className="py-1">Experiência:</strong> &nbsp;{' '}
                 {props.pokemon.base_experience}xp
               </div>
               <div className="pokemon-details-card__body__forms d-flex flex-wrap align-items-center">
-                <strong className="mb-2 mb-sm-0">Formas:</strong>{' '}
+                <strong className="mb-2 mb-sm-0 text-nowrap">Formas:</strong>{' '}
                 {props.pokemon.forms.map((formObject: Form) => {
                   return (
                     <div
