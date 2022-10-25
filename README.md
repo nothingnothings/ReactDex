@@ -15,19 +15,24 @@
 
 
 
-## Introduction
+## Introdução
 
 ![Reactdex](snapshot/Reactdex1.png)
 
 
+
+
 ![Reactdex](snapshot/Reactdex2.png)
+
+
 
 Single Page Application (SPA) construída com a library/framework ReactJS (create-react-app). O design do app foi inspirado pelo site [https://pokeapi.co/](https://pokeapi.co). Bootstrap, Flexbox e media queries foram utilizados na construção do design responsivo (tentando fornecer a melhor experiência possível a múltiplas configurações de tela/dispositivos, tanto desktop como mobile, com diferentes resoluções). Seguindo as ultimas orientações/versões da library React, o app foi constituído através do uso de functional components, distanciando-se do approach class-based ("`class App extends React.Component{}`") usado no passado. 
 
-O app foi inicializado/bootstrapped com o comando `create-react-app` e implantado (deploy) com o GitHub Pages, assistido pelo recurso GitHub Actions.
+O app foi inicializado/bootstrapped com o comando/environment `create-react-app` e implantado (deploy) com o GitHub Pages, assistido pelo recurso GitHub Actions.
+
 
  
-## Technologies 
+## Tecnologias
  
  Algumas das linguagens e libraries empregadas:
  
@@ -43,9 +48,9 @@ O app foi inicializado/bootstrapped com o comando `create-react-app` e implantad
  - Axios (para a comunicação, requests e responses, entre este aplicativo frontend e o backend visado/buscado por ele, os API endpoints disponibilizados pelo domínio "pokeapi.co")
  
  
-## Project Directory Structure
+## Estrutura de Diretórios do Projeto
 
-The development environment (with the use of the `create-react-app` tool/workflow):
+O ambiente de desenvolvimento (com utilização da ferramenta/environment/worfklow `create-react-app`):
 
 
 ```
@@ -289,7 +294,7 @@ The development environment (with the use of the `create-react-app` tool/workflo
 ```
 
 
-The `create-react-app` workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
+O output de production de `create-react-app`, como é observado no branch`gh-pages` (encarregado da implementação/deployment do app):
 
 
 ```
@@ -337,7 +342,7 @@ The `create-react-app` workflow's production output, as shown in the `gh-pages` 
 
 
 
-## Project Configuration Files (package.json)
+## Arquivos de Configuração do Projeto (package.json e tsconfig.json)
 
 The package.json file used in the project:
 
@@ -401,10 +406,10 @@ The package.json file used in the project:
 }
 ```
 
-## Setup 
+## Instalação/Utilização 
 
 
-To use this project, clone it using Git:
+Para usar este projeto, clone-o usando Git:
 
 1. Run `git clone` to clone the project into your local Git repository
 2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
@@ -413,7 +418,7 @@ To use this project, clone it using Git:
 5. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's various features
 
 
-## Features 
+## Destaques (features)
 
 - Single-Page Application, no page reloads, single HTML file (ReactJS)
 - Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
@@ -434,7 +439,3 @@ To use this project, clone it using Git:
 - Font Awesome and Bootstrap usage (in the Footer component)
 - Custom favicon, compatible with multiple devices
 
-
-## Inspiration
-
-This app was based on the applications seen on the "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" and "React - The Complete Guide (incl Hooks, React Router, Redux)" courses by Maximilian Schwarzmüller.
