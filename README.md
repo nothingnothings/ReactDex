@@ -22,29 +22,25 @@
 
 ![Reactdex](snapshot/Reactdex2.png)
 
-Frontend Single Page Application (SPA) built with the ReactJS (create-react-app) library. The site's design, hexagon-inspired, was based on [Node.js's logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox and media queries were used for the responsive design (attempting to cater to multiple device types, both desktop and mobile, with different resolutions). As per React's latest versions, the app was made out of functional components, moving away from the class-based ("`class App extends React.Component{}`") component approach used in the past. 
+Single Page Application (SPA) construída com a library/framework ReactJS (create-react-app). O design do app foi inspirado pelo site [https://pokeapi.co/](https://pokeapi.co). Bootstrap, Flexbox e media queries foram utilizados na construção do design responsivo (tentando fornecer a melhor experiência possível a múltiplas configurações de tela/dispositivos, tanto desktop como mobile, com diferentes resoluções). Seguindo as ultimas orientações/versões da library React, o app foi constituído através do uso de functional components, distanciando-se do approach class-based ("`class App extends React.Component{}`") usado no passado. 
 
-The App was bootstrapped with `create-react-app` and deployed with GitHub Pages, assisted by the GitHub Actions feature.
-This app is also available as a "multi-page" app, without ReactJS. The project can be found [here](https://nodeshop-br-ejs.herokuapp.com/).
-
-The backend of the app, as its name suggests, utilizes Node.js (with the Express.js framework) and is hosted on the Heroku platform. The serverside code can be found [here](https://github.com/nothingnothings/NodeShopRestAPIBackend).
-
+O app foi inicializado/bootstrapped com o comando `create-react-app` e implantado (deploy) com o GitHub Pages, assistido pelo recurso GitHub Actions.
 
  
 ## Technologies 
  
- Some of the Languages and Libraries employed:
+ Algumas das linguagens e libraries empregadas:
  
- - Node Package Manager (for bootstrapping and managing the React app)
- - HTML5 (JSX)
- - CSS3 (animations, Flexbox, media queries)
- - ReactJS (JavaScript Library, app built entirely of React components)
- - React Router (for the navigation between the different "pages" of the app)
- - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
- - Bootstrap (mainly for parts of the Footer component)
- - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
- - Font Awesome
- - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
+ - Node Package Manager (bootstrapping e gerenciamento do aplicativo React)
+ - HTML5 (com JSX, por conta do React)
+ - CSS3 (animações, Flexbox, media queries)
+ - JavaScript "vanilla", para o setup de uma Single-Page Application no GitHub Pages (script posicionado no `<head>` do arquivo `index.html`)
+ - ReactJS (library/framework JavaScript, app composto inteiramente por React components)
+ - Typescript (para a type safety dos objetos recebidos pelos endpoints do backend, Models e Interfaces, etc.)
+ - React Router (para a navegação entre as diferentes "páginas" do aplicativo)
+ - Manage local de state (2 states principais; o central, em "App.js", usado nas páginas "Pokedex", e o relativo aos pokémons indivíduais,  localizado na página "PokemonDetails", acessada pela route "/pokedex/:idDoPokemon")
+ - Bootstrap (usado na barra de navegação e no posicionamento geral dos elementos na página, com "container", "row" e "col")
+ - Axios (para a comunicação, requests e responses, entre este aplicativo frontend e o backend visado/buscado por ele, os API endpoints disponibilizados pelo domínio "pokeapi.co")
  
  
 ## Project Directory Structure
