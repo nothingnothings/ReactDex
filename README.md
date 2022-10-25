@@ -294,7 +294,7 @@ O ambiente de desenvolvimento (com utilização da ferramenta/environment/worfkl
 ```
 
 
-O output de production de `create-react-app`, como é observado no branch`gh-pages` (encarregado da implementação/deployment do app):
+O output de production de `create-react-app`, que pode ser visualizado no branch`gh-pages` (encarregado da implementação/deployment do app):
 
 
 ```
