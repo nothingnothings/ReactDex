@@ -329,5 +329,5 @@ Para usar este projeto, clone-o usando Git:
 - Utilização de recursos integrais da library ReactJS, como os hooks `useState()` e `useEffect()`
 - Spinner customizado de carregamento (pokebola)
 - Página de erro customizada, com output da mensagem/motivo do erro ao usuário
-- Custom favicon, compatible with multiple devices
+- Favicon compatível com diversos dispositivos
 
