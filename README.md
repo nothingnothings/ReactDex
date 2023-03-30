@@ -33,6 +33,7 @@ O app foi inicializado/bootstrapped com o comando/environment `create-react-app`
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/pokemonapi?style=flat-square)
 
 
+
  
 ## Tecnologias
  
