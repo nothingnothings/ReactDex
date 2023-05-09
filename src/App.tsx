@@ -24,6 +24,7 @@ function App() {
   const [isError, setIsError] = useState<boolean>(false);
   //  Sets error message of the pokemon list load process (if present)
   const [errorMessage, setErrorMessage] = useState<string>('');
+  
 
   useEffect(() => {
     // 800 pokemon is quite a lot, so adjust to lower numbers for mobile devices
