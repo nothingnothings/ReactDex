@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nothingnothings.github.io/pokemonapi"><strong>https://nothingnothings.github.io/pokemonapi</strong></a>
+  <a href="https://nothingnothings.github.io/ReactDex"><strong>https://nothingnothings.github.io/ReactDex</strong></a>
   <br>
 </p>
 
@@ -30,8 +30,8 @@ Single Page Application (SPA) construída com a library/framework ReactJS (creat
 
 O app foi inicializado/bootstrapped com o comando/environment `create-react-app` e implantado (deploy) com o GitHub Pages, assistido pelo recurso GitHub Actions.
 
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/pokemonapi?style=flat-square)
-[![HitCount](https://hits.dwyl.com/nothingnothings/pokemonapi.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/pokemonapi)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/ReactDex?style=flat-square)
+[![HitCount](https://hits.dwyl.com/nothingnothings/ReactDex.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/ReactDex)
 
 
 
