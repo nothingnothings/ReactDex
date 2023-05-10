@@ -1,4 +1,4 @@
-<h1 align="center">ReactDex - Uma Pokédex construída com ReactJS</h1>
+<h1 align="center">ReactDex - OceanBlue - Uma Pokédex construída com ReactJS</h1>
 <p align="center">
   <img src="public/logo512.png" alt="Reactdex-logo" width="120px" height="120px"/>
   <br>
