@@ -20,7 +20,7 @@ const MainNavigation = () => {
           className="react-image d-none d-md-block"
         ></img>
         <a
-          href="https://nothingnothings.github.io/ReactDex"
+          href="https://github.com/nothingnothings/ReactDex"
           rel="noreferrer"
           target="_blank"
         >
