@@ -7,10 +7,6 @@ import NavigationItem from './NavigationItem/NavigationItem';
 ///CSS
 import './NavigationItems.css';
 
-///IMAGES
-
-import ReactImage from '../../../../../../public/images/react-logo.png';
-
 const navItems = [
   { id: 'pokedex', text: 'Pokédex', link: '/' },
   { id: 'search', text: 'Procurar por um Pokémon', link: '/search' },
@@ -30,7 +26,6 @@ const NavigationItems = () => {
             ></NavigationItem>
           );
         })}
-        <img src={ReactImage}></img>
       </ul>
     </React.Fragment>
   );
