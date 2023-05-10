@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactDex/static/css/main.7db92a63.css",
-    "main.js": "/ReactDex/static/js/main.7c7ec5fc.js",
+    "main.css": "/ReactDex/static/css/main.393c4620.css",
+    "main.js": "/ReactDex/static/js/main.d3ac352d.js",
+    "static/media/react-logo.png": "/ReactDex/static/media/react-logo.3e7668f07f54d70aef33.png",
     "static/media/Pokemon Solid.ttf": "/ReactDex/static/media/Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf",
+    "static/media/github-logo.png": "/ReactDex/static/media/github-logo.987334e9f782cc505f25.png",
     "index.html": "/ReactDex/index.html",
-    "main.7db92a63.css.map": "/ReactDex/static/css/main.7db92a63.css.map",
-    "main.7c7ec5fc.js.map": "/ReactDex/static/js/main.7c7ec5fc.js.map"
+    "main.393c4620.css.map": "/ReactDex/static/css/main.393c4620.css.map",
+    "main.d3ac352d.js.map": "/ReactDex/static/js/main.d3ac352d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7db92a63.css",
-    "static/js/main.7c7ec5fc.js"
+    "static/css/main.393c4620.css",
+    "static/js/main.d3ac352d.js"
   ]
 }
