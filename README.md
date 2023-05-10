@@ -17,14 +17,17 @@
 
 ## Introdução
 
-![Reactdex](snapshot/Reactdex1.png)
+![Reactdex](snapshot/ReactDex1.png)
 
 
 
 
-![Reactdex](snapshot/Reactdex2.png)
+![Reactdex](snapshot/ReactDex2.png)
 
 
+
+
+![Reactdex](snapshot/ReactDex3.png)
 
 Single Page Application (SPA) construída com a library/framework ReactJS (create-react-app). O design do app foi inspirado pelo site [https://pokeapi.co](https://pokeapi.co). Bootstrap, Flexbox e media queries foram utilizados na construção do design responsivo (tentativa de fornecer a melhor experiência possível a múltiplas configurações de tela/dispositivos, tanto desktop como mobile, com diferentes resoluções). Seguindo as últimas orientações/versões da library React, o app foi constituído através do uso de functional components, distanciando-se do approach class-based ("`class App extends React.Component{}`") usado no passado. 
 
