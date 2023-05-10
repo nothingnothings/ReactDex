@@ -43,7 +43,7 @@ const Pokedex: React.FC<PokedexProps> = (props) => {
             {props.pokemons.map((pokemon, _index) => {
               return (
                 <div
-                  className="col-12 col-sm-11 col-md-8 col-lg-6 "
+                  className="col-12 col-sm-11 col-md-8 col-lg-6"
                   key={pokemon.name + Math.random()}
                 >
                   <Card pokemon={pokemon}></Card>

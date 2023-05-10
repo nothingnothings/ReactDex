@@ -15,7 +15,15 @@ interface CardProps {
 const Card: React.FC<CardProps> = (props) => {
   return (
     <NavLink to={`/pokedex/${props.pokemon.id}`} className="pokemon-link">
-      <div className="card px-2 mb-5 d-flex flex-row align-items-center justify-content-center position-relative">
+      <div
+        className={`card ${
+          props.pokemon.id === 7 ||
+          props.pokemon.id === 8 ||
+          props.pokemon.id === 9
+            ? 'starter-background'
+            : ''
+        } px-2 mb-5 d-flex flex-row align-items-center justify-content-center position-relative`}
+      >
         <h3 className="pokemon-number text-right position-absolute">
           # {props.pokemon.id}
         </h3>
