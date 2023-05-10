@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nothingnothings.github.io/ReactDex"><strong>https://nothingnothings.github.io/ReactDex</strong></a>
+  <a href="https://nothingnothings.github.io/ReactDex" target="_blank" rel="noreferrer noopener"><strong>https://nothingnothings.github.io/ReactDex</strong></a>
   <br>
 </p>
 
