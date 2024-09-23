@@ -335,7 +335,7 @@ To use this project, clone it using Git:
 
 - Single-page application with no page reloads, using a single HTML file (ReactJS).
 - Application divided into various components, some of which are reused across different pages (design philosophy of the ReactJS library).
-- Custom CSS design
+- Custom CSS design.
 - Responsive design (adaptive, supporting mobile and desktop devices) created with Bootstrap, Flexbox, and media queries.
 - GitHub Actions and GitHub Pages usage with the `create-react-app` tool to build a seamless workflow (transitioning from development to production/deployment). With the `git push` command, GitHub Actions transfers the content from the `master` branch to the `gh-pages` branch, which then deploys the app at https://nothingnothings.github.io/ReactDex/.
 - Usage of the Axios package/tool for communication with the backend "pokeapi.co," which provides Pokémon data (names, IDs, weight, height, types, abilities, etc.) to the React app.
