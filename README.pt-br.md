@@ -1,9 +1,9 @@
-<h1 align="center">ReactDex - OceanBlue - A Pokédex Built with ReactJS</h1>
+<h1 align="center">ReactDex - OceanBlue - Uma Pokédex construída com ReactJS</h1>
 <p align="center">
   <img src="public/logo512.png" alt="Reactdex-logo" width="120px" height="120px"/>
   <br>
-  <i>This web app is an example of an application that can be built using the 
-    <br>JavaScript framework ReactJS.</i>
+  <i>Este webApp é um exemplo de aplicativo que pode ser construído com o 
+    <br>framework JavaScript ReactJS.</i>
   <br>
 </p>
 
@@ -15,7 +15,7 @@
 
 
 
-## Introduction
+## Introdução
 
 ![Reactdex](snapshot/ReactDex1.png)
 
@@ -29,9 +29,9 @@
 
 ![Reactdex](snapshot/ReactDex3.png)
 
-Single Page Application (SPA) built with the ReactJS library/framework (create-react-app). The app's design was inspired by the website [https://pokeapi.co](https://pokeapi.co). Bootstrap, Flexbox, and media queries were used to create a responsive design (aiming to provide the best possible experience across multiple screen configurations/devices, both desktop and mobile, with varying resolutions). Following the latest guidelines/versions of the React library, the app was built using functional components, moving away from the class-based approach ("`class App extends React.Component{}`") used in the past.
+Single Page Application (SPA) construída com a library/framework ReactJS (create-react-app). O design do app foi inspirado pelo site [https://pokeapi.co](https://pokeapi.co). Bootstrap, Flexbox e media queries foram utilizados na construção do design responsivo (tentativa de fornecer a melhor experiência possível a múltiplas configurações de tela/dispositivos, tanto desktop como mobile, com diferentes resoluções). Seguindo as últimas orientações/versões da library React, o app foi constituído através do uso de functional components, distanciando-se do approach class-based ("`class App extends React.Component{}`") usado no passado. 
 
-The app was initialized/bootstrapped with the `create-react-app` command/environment and deployed with GitHub Pages, assisted by GitHub Actions.
+O app foi inicializado/bootstrapped com o comando/environment `create-react-app` e implantado (deploy) com o GitHub Pages, assistido pelo recurso GitHub Actions.
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/ReactDex?style=flat-square)
 [![HitCount](https://hits.dwyl.com/nothingnothings/ReactDex.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/ReactDex)
@@ -42,25 +42,25 @@ The app was initialized/bootstrapped with the `create-react-app` command/environ
 
 
  
-## Technologies
+## Tecnologias
  
-Some of the languages and libraries that were used:
+ Algumas das linguagens e libraries empregadas:
  
-- Node Package Manager (bootstrapping and managing the React application)
-- HTML5 (with JSX, due to React)
-- CSS3 (animations, Flexbox, media queries)
-- Vanilla JavaScript for setting up a Single Page Application on GitHub Pages (script placed in the `<head>` of the `index.html` file)
-- ReactJS (JavaScript library/framework, app composed entirely of React components)
-- TypeScript (for type safety of objects received from backend endpoints, models, and interfaces, etc.)
-- React Router (for navigation between the different "pages" of the app)
-- Local state management (two main states: the central one in "App.js", used in the "Pokedex" and "Search for a Pokémon" pages, and the individual Pokémon state located in the "PokemonDetails" page, accessed via the route "/pokedex/:pokemonId")
-- Bootstrap (used in the navigation bar and for overall positioning of elements on the page, with "container," "row," and "col")
-- Axios (for communication, requests, and responses between this frontend application and the targeted backend API endpoints provided by the domain "pokeapi.co")
+ - Node Package Manager (bootstrapping e gerenciamento do aplicativo React)
+ - HTML5 (com JSX, por conta do React)
+ - CSS3 (animações, Flexbox, media queries)
+ - JavaScript "vanilla", para o setup de uma Single-Page Application no GitHub Pages (script posicionado no `<head>` do arquivo `index.html`)
+ - ReactJS (library/framework JavaScript, app composto inteiramente por React components)
+ - Typescript (para a type safety dos objetos recebidos pelos endpoints do backend, Models e Interfaces, etc.)
+ - React Router (para a navegação entre as diferentes "páginas" do aplicativo)
+ - Manage local de state (dois states principais: o central, em "App.js", usado nas páginas "Pokedex" e "Procurar por um Pokémon", e o relativo aos pokémons indivíduais,  localizado na página "PokemonDetails", acessada pela route "/pokedex/:idDoPokemon")
+ - Bootstrap (usado na barra de navegação e no posicionamento geral dos elementos na página, com "container", "row" e "col")
+ - Axios (para a comunicação, requests e responses, entre este aplicativo frontend e o backend visado/buscado por ele, os API endpoints disponibilizados pelo domínio "pokeapi.co")
  
  
-## Project Directory Structure
+## Estrutura de Diretórios do Projeto
 
-The development environment (created by using the `create-react-app` tool/environment/workflow):
+O ambiente de desenvolvimento (com utilização da ferramenta/environment/worfklow `create-react-app`):
 
 
 ```
@@ -182,7 +182,6 @@ The development environment (created by using the `create-react-app` tool/enviro
 │   └── logo.svg
 │
 ├── README.md
-├── README.pt-br.md
 ├── package-lock.json
 ├── package.json
 ├── react-app-env.d.ts
@@ -190,7 +189,7 @@ The development environment (created by using the `create-react-app` tool/enviro
 ```
 
 
-The production output of `create-react-app`, which can be viewed in the `gh-pages` branch (responsible for deploying the app):
+O output de produção de `create-react-app`, que pode ser visualizado no branch`gh-pages` (encarregado da implementação/deployment do app):
 
 
 ```
@@ -229,10 +228,9 @@ The production output of `create-react-app`, which can be viewed in the `gh-page
 
 
 
-## Project Configuration Files (package.json and tsconfig.json)
+## Arquivos de Configuração do Projeto (package.json e tsconfig.json)
 
-
-The `package.json` file used in the project:
+O arquivo package.json utilizado no projeto:
 
 ```
 {
@@ -285,8 +283,7 @@ The `package.json` file used in the project:
 ```
 
 
-The tsconfig.json file used in the project:
-
+O arquivo tsconfig.json utilizado no projeto: 
 
 ```
 
@@ -319,28 +316,28 @@ The tsconfig.json file used in the project:
 
 ```
 
-## Installation/Usage
+## Instalação/Utilização 
 
 
-To use this project, clone it using Git:
+Para usar este projeto, clone-o usando Git:
 
-1. Run `git clone` to clone the project into your local Git repository.
-2. Run `npm install` to install all dependencies (`react`, `axios`, etc.).
-3. Run `npm run build` to create the production/deployment version of the application (outputted in the `/build` directory).
-4. Serve the production/deployment files locally or on the web (with the help of a hosting service).
-5. On the "Pokédex" page, click/tap on the Pokémon whose characteristics you want to view. On the "Search for a Pokémon" page, type the name of the Pokémon you want to search for.
+1. Rode `git clone` para clonar o projeto dentro de seu repositório local Git
+2. Rode `npm install` para instalar todas as dependências (`react`, `axios`, etc)
+3. Rode `npm run build` para criar a versão de produção/implementação (production/deployment) do aplicativo (produzido no diretório `/build`)
+4. Sirva os arquivos de produção/implementação localmente ou na web (com a ajuda de algum serviço de hospedagem)
+5. Na página "Pokédex", clique/toque no Pokémon cujas características deseja visualizar. Na página "Procurar por um Pokémon", digite o nome do Pokémon que deseja buscar
 
 
-## Features
+## Destaques (features)
 
-- Single-page application with no page reloads, using a single HTML file (ReactJS).
-- Application divided into various components, some of which are reused across different pages (design philosophy of the ReactJS library).
-- Custom CSS design
-- Responsive design (adaptive, supporting mobile and desktop devices) created with Bootstrap, Flexbox, and media queries.
-- GitHub Actions and GitHub Pages usage with the `create-react-app` tool to build a seamless workflow (transitioning from development to production/deployment). With the `git push` command, GitHub Actions transfers the content from the `master` branch to the `gh-pages` branch, which then deploys the app at https://nothingnothings.github.io/ReactDex/.
-- Usage of the Axios package/tool for communication with the backend "pokeapi.co," which provides Pokémon data (names, IDs, weight, height, types, abilities, etc.) to the React app.
-- Utilization of core features of the ReactJS library, such as the hooks `useState()` and `useEffect()`.
-- Custom loading spinner (Pokéball).
-- Custom error page that outputs the error message/reason to the user.
-- Favicon compatible with various devices.
+- Aplicativo página única, sem recarregamentos de página, arquivo HTML único (ReactJS)
+- Aplicativo dividido em diversos componentes, alguns deles utilizados mais de uma única vez, em páginas distintas (filosofia de design da library ReactJS)
+- Design criado com CSS
+- Design responsivo (adaptativo, suporte a dispositivos móveis e desktop) criado com Bootstrap, Flexbox e media queries
+- Utilização dos recursos GitHub Actions e GitHub Pages com a ferramenta `create-react-app` para construir um workflow ininterrupto (transição da fase de desenvolvimento para a fase de produção/implementação). A partir do comando `git push`, o GitHub Actions transfere o conteúdo do branch `master` para dentro do branch `gh-pages`, o qual então implementa/faz deploy do app no endereço https://nothingnothings.github.io/ReactDex/
+- Utilização do pacote/ferramenta Axios para a comunicação com o backend "pokeapi.co", que fornece os dados dos Pokémons (nomes, IDs, peso, altura, tipos, abilidades, etc) ao aplicativo React
+- Utilização de recursos integrais da library ReactJS, como os hooks `useState()` e `useEffect()`
+- Spinner customizado de carregamento (pokebola)
+- Página de erro customizada, com output da mensagem/motivo do erro ao usuário
+- Favicon compatível com diversos dispositivos
 
