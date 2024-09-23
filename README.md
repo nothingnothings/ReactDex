@@ -34,7 +34,6 @@ Single Page Application (SPA) built with the ReactJS library/framework (create-r
 The app was initialized/bootstrapped with the `create-react-app` command/environment and deployed with GitHub Pages, assisted by GitHub Actions.
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/ReactDex?style=flat-square)
-[![HitCount](https://hits.dwyl.com/nothingnothings/ReactDex.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/ReactDex)
 [![en](https://img.shields.io/badge/lang-en-red.svg?style=flat-square)](https://github.com/nothingnothings/ReactDex)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg?style=flat-square)](https://github.com/nothingnothings/ReactDex/blob/master/README.pt-br.md)
 
